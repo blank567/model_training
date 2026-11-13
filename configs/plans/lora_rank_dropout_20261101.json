@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "kind": "experiment_design",
+  "status": "running_rank_phase",
+  "created_date": "2026-11-01",
+  "learning_rate": 0.0002,
+  "epochs": 1,
+  "stop_epochs": null,
+  "expected_updates": 3125,
+  "expected_warmup_updates": 94,
+  "rank_templates": [
+    "configs/posttrain/custom_300m_lora_r8_one_epoch.json",
+    "configs/posttrain/custom_300m_lora_r32_one_epoch.json"
+  ],
+  "dropout_values": [
+    0.05,
+    0.1
+  ],
+  "reuse_selected_rank_dropout_zero_baseline": true,
+  "total_new_training_runs": 4,
+  "rank_selection_candidates": [
+    8,
+    32
+  ],
+  "historical_r16_excluded_due_to_different_schedule": true,
+  "selection_metric": "auxiliary development macro loss at completed one epoch",
+  "test_used_for_selection": false,
+  "pipeline_compute_cap_cny": 20,
+  "runtime_sha256": "899d9750e6b9963cf0e5f60f22a3faf51655780d9519f919396da50fb0d3f914",
+  "entrypoint": "scripts/train_lora_one_epoch.py",
+  "controller": "scripts/run_lora_ablation.py",
+  "document": "docs/lora-rank-dropout-20261101.md",
+  "tracking": {
+    "wandb_mode": "offline",
+    "reason": "W&B direct timeout; AutoDL accelerator HTTP 403",
+    "tensorboard": true,
+    "jsonl": true,
+    "later_wandb_sync_required": true
+  },
+  "execution": {
+    "controller_dir": "/root/autodl-tmp/model_training/runs/assistant/system/lora_rank_dropout_20261101_134339",
+    "state_file": "/root/autodl-tmp/model_training/runs/assistant/system/lora_rank_dropout_20261101_134339/state.json",
+    "controller_pid_at_launch": 2689,
+    "rank_configs": [
+      "/root/autodl-tmp/model_training/runs/configs/lora_300m_data100000_r8_a16_all_ld0_lr2e-4_mb8_ga4_b32_ep1_wu0p03_wd0p01_seed42_20261101_134339.json",
+      "/root/autodl-tmp/model_training/runs/configs/lora_300m_data100000_r32_a64_all_ld0_lr2e-4_mb8_ga4_b32_ep1_wu0p03_wd0p01_seed42_20261101_134339.json"
+    ]
+  }
+}

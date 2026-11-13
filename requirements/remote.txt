@@ -1,0 +1,15 @@
+# Linux Python 3.10/3.11 直接依赖版本；完整传递依赖以目标环境 pip freeze 为准。
+# 先按 scripts/setup_remote.sh 安装 torch==2.9.0 的 CUDA wheel。
+numpy==1.26.4
+tokenizers==0.22.2
+transformers==4.57.1
+peft==0.17.1
+trl==0.24.0
+accelerate==1.11.0
+datasets==4.3.0
+# 官方 C++ Python 绑定；繁转简配置与词典指纹写入数据 manifest。
+OpenCC==1.4.2
+tensorboard==2.20.0
+wandb==0.30.0
+pytest==9.1.1
+

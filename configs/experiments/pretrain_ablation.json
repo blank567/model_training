@@ -1,0 +1,13 @@
+{
+  "base_config": "configs/pretrain/100m.json",
+  "output_root": "runs/pretrain_ablation",
+  "tokens_per_trial": 262144,
+  "trials": [
+    {"name": "baseline", "overrides": {}},
+    {"name": "lr_1e4", "overrides": {"train": {"learning_rate": 0.0001}}},
+    {"name": "effective_batch_double", "overrides": {"train": {"gradient_accumulation_steps": 16}}},
+    {"name": "context_512", "overrides": {"model": {"max_seq_len": 512}, "train": {"seq_len": 512, "gradient_accumulation_steps": 16}}},
+    {"name": "context_2048", "overrides": {"model": {"max_seq_len": 2048}, "train": {"seq_len": 2048, "gradient_accumulation_steps": 4}}}
+  ]
+}
+

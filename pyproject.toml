@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bilingual-training-lab"
+version = "0.1.0"
+description = "Reproducible single-GPU pretraining and post-training experiments"
+requires-python = ">=3.10,<3.12"
+dependencies = ["torch>=2.6,<2.11", "numpy>=1.26,<3", "tokenizers>=0.22,<0.23"]
+
+[project.optional-dependencies]
+data = ["datasets==4.3.0", "huggingface-hub>=0.34,<1"]
+tracking = ["tensorboard==2.20.0", "wandb==0.30.0"]
+posttrain = ["transformers==4.57.1", "peft==0.17.1", "trl==0.24.0", "accelerate==1.11.0", "datasets==4.3.0", "tensorboard==2.20.0", "wandb==0.30.0"]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+llm-lab = "llm_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+

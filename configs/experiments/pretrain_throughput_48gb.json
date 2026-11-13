@@ -1,0 +1,44 @@
+{
+  "base_config": "configs/pretrain/100m_probe.json",
+  "output_root": "runs/pretrain_throughput_48gb",
+  "tokens_per_trial": 524288,
+  "trials": [
+    {
+      "name": "baseline_2x8",
+      "overrides": {
+        "train": {
+          "micro_batch_size": 2, "gradient_accumulation_steps": 8, "eval_batches": 8,
+          "wandb_run_name": "throughput-baseline-2x8"
+        }
+      }
+    },
+    {
+      "name": "batch_4x4",
+      "overrides": {
+        "train": {
+          "micro_batch_size": 4, "gradient_accumulation_steps": 4, "eval_batches": 4,
+          "wandb_run_name": "throughput-batch-4x4"
+        }
+      }
+    },
+    {
+      "name": "batch_8x2",
+      "overrides": {
+        "train": {
+          "micro_batch_size": 8, "gradient_accumulation_steps": 2, "eval_batches": 2,
+          "wandb_run_name": "throughput-batch-8x2"
+        }
+      }
+    },
+    {
+      "name": "batch_8x2_no_checkpoint",
+      "overrides": {
+        "model": {"activation_checkpointing": false},
+        "train": {
+          "micro_batch_size": 8, "gradient_accumulation_steps": 2, "eval_batches": 2,
+          "wandb_run_name": "throughput-batch-8x2-no-checkpoint"
+        }
+      }
+    }
+  ]
+}

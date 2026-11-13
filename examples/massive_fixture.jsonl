@@ -1,0 +1,16 @@
+{"id":"fixture-0","locale":"en-US","partition":"train","scenario":"alarm","intent":"alarm_set","utt":"wake me at six tomorrow","annot_utt":"wake me at [time : six] [date : tomorrow]"}
+{"id":"fixture-0","locale":"zh-CN","partition":"train","scenario":"alarm","intent":"alarm_set","utt":"明天六点叫我起床","annot_utt":"[date : 明天][time : 六点]叫我起床"}
+{"id":"fixture-1","locale":"en-US","partition":"train","scenario":"weather","intent":"weather_query","utt":"is it raining in River City","annot_utt":"is it raining in [place_name : River City]"}
+{"id":"fixture-1","locale":"zh-CN","partition":"train","scenario":"weather","intent":"weather_query","utt":"河城现在下雨吗","annot_utt":"[place_name : 河城]现在下雨吗"}
+{"id":"fixture-2","locale":"en-US","partition":"train","scenario":"music","intent":"music_play","utt":"play Quiet Morning","annot_utt":"play [song_name : Quiet Morning]"}
+{"id":"fixture-2","locale":"zh-CN","partition":"train","scenario":"music","intent":"music_play","utt":"播放宁静早晨","annot_utt":"播放[song_name : 宁静早晨]"}
+{"id":"fixture-3","locale":"en-US","partition":"train","scenario":"calendar","intent":"calendar_query","utt":"show my calendar","annot_utt":"show my calendar"}
+{"id":"fixture-3","locale":"zh-CN","partition":"train","scenario":"calendar","intent":"calendar_query","utt":"查看我的日程","annot_utt":"查看我的日程"}
+{"id":"fixture-4","locale":"en-US","partition":"dev","scenario":"alarm","intent":"alarm_set","utt":"set an alarm for eight tonight","annot_utt":"set an alarm for [time : eight] [date : tonight]"}
+{"id":"fixture-4","locale":"zh-CN","partition":"dev","scenario":"alarm","intent":"alarm_set","utt":"设置今晚八点的闹钟","annot_utt":"设置[date : 今晚][time : 八点]的闹钟"}
+{"id":"fixture-5","locale":"en-US","partition":"dev","scenario":"weather","intent":"weather_query","utt":"check the weather in Lake Town","annot_utt":"check the weather in [place_name : Lake Town]"}
+{"id":"fixture-5","locale":"zh-CN","partition":"dev","scenario":"weather","intent":"weather_query","utt":"查询湖镇的天气","annot_utt":"查询[place_name : 湖镇]的天气"}
+{"id":"fixture-6","locale":"en-US","partition":"test","scenario":"music","intent":"music_play","utt":"please play Blue Window","annot_utt":"please play [song_name : Blue Window]"}
+{"id":"fixture-6","locale":"zh-CN","partition":"test","scenario":"music","intent":"music_play","utt":"请播放蓝色窗户","annot_utt":"请播放[song_name : 蓝色窗户]"}
+{"id":"fixture-7","locale":"en-US","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"what is on my calendar today","annot_utt":"what is on my calendar [date : today]"}
+{"id":"fixture-7","locale":"zh-CN","partition":"test","scenario":"calendar","intent":"calendar_query","utt":"我今天有什么日程","annot_utt":"我[date : 今天]有什么日程"}

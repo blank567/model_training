@@ -1,0 +1,128 @@
+{
+  "publication_date": "2026-11-13",
+  "evaluation_date": "2026-11-04",
+  "description": "Existing evaluation summaries and five existing figures. No training or inference was performed for publication. Machine paths, W&B identifiers, raw text and per-example predictions are excluded.",
+  "reference_sources": [
+    {
+      "path": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/report/完整测试报告.md",
+      "sha256": "4291e0aa970252b2f3331c0ffec0b69c8b0c793bffde8131066e44b54971858b"
+    },
+    {
+      "path": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/report/report_manifest.json",
+      "sha256": "590d215badd883b8d98db85d15efe044a63a6110b2007374f1de0243fcbff025"
+    },
+    {
+      "path": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/sources_local/training/pretrain_300m_3b_20261025_150858/summary.json",
+      "sha256": "3859d47770db0f92bac901e6c46b4b22571ab597930cff6a7704f92a88003090"
+    },
+    {
+      "path": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/sources_local/training/pretrain_300m_3b_20261025_150858/config.json",
+      "sha256": "537d503a8a1cc0cb84c5b1d76dba1741604989730a3bc1bd5ab14d092323eafa"
+    },
+    {
+      "path": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/sources_local/training/pretrain_300m_3b_20261025_150858/metrics.jsonl",
+      "sha256": "14a5d891a2b589427121c4c47ca2c2121936ccaea08d88e20dd8458dd4c65a1a"
+    }
+  ],
+  "files": [
+    {
+      "source": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/report/tables/01_model_inventory.csv",
+      "source_sha256": "e7f3ed5491577a2ba088ab317872d0e02238610c1a5617372c2d039e44b3fd42",
+      "published": "docs/results/model_inventory.csv",
+      "published_sha256": "7fdd0f614c13ffd200b38f33c4a487d5672435b7ef9451d8368eb13d4609f55c",
+      "rows": 25,
+      "removed_columns": [
+        "checkpoint",
+        "initial_checkpoint",
+        "data_manifest",
+        "wandb_run_id",
+        "wandb_url"
+      ]
+    },
+    {
+      "source": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/report/tables/11_instruction_1000_all_models.csv",
+      "source_sha256": "26fb1399d90a516cb7e0d82cbc7390e535212dede38181e4f1ba174dc09d7ca8",
+      "published": "docs/results/instruction_1000.csv",
+      "published_sha256": "abe57ae70d9b022bc61cd4e17667fbc16bddb307373c07f94658814af0a512fe",
+      "rows": 15,
+      "removed_columns": []
+    },
+    {
+      "source": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/report/tables/03_reading_all_checkpoints.csv",
+      "source_sha256": "083cbdc60ee4ad8344009f13c9a92b6dd09be1b30f85ee4fb9edfd23fff941b2",
+      "published": "docs/results/reading_all_checkpoints.csv",
+      "published_sha256": "96561183b90857810509f3bd17072861e0642f53f377ac173791f943a8c153fa",
+      "rows": 22,
+      "removed_columns": [
+        "evaluated_identical_to"
+      ]
+    },
+    {
+      "source": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/report/tables/02_reading_primary_comparisons.csv",
+      "source_sha256": "4c1adc6b0bfcf7b572bc4a970108c1ec5ceac70b325730df666ce6d6c670f26f",
+      "published": "docs/results/reading_paired_comparisons.csv",
+      "published_sha256": "8a5b478bcde1a2481a3170a7884f3b67fdb76db5d880b43efcdac3b9dd5772bc",
+      "rows": 9,
+      "removed_columns": []
+    },
+    {
+      "source": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/report/tables/10_best_vs_last.csv",
+      "source_sha256": "6beae7fd920ab46592c423b4b9f1f77cb6697f672b498fb856898436bd82d715",
+      "published": "docs/results/best_vs_last.csv",
+      "published_sha256": "73947e31c8b8395880438384b39258b7fb56078e05b0de5030387745155ea4f7",
+      "rows": 9,
+      "removed_columns": []
+    },
+    {
+      "source": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/report/tables/14_historical_sft_controls.csv",
+      "source_sha256": "baa237c76f128eac24c547bb2e00f7ea70c89e324243290de9c8fedfcb96a762",
+      "published": "docs/results/historical_sft_controls.csv",
+      "published_sha256": "d412f4a2db9620f9b5e6e0d820fa758a8e15eada82d680d1e89e5c0457c501ce",
+      "rows": 9,
+      "removed_columns": []
+    },
+    {
+      "source": "runs/assistant/inference/posttrain_comprehensive_20261104_v3/report/tables/17_cross_domain_instruction_loss.csv",
+      "source_sha256": "51b1243ffa7b2029ee9716857cd7b93c726ccde477f5de9d812e8958f57debd7",
+      "published": "docs/results/cross_domain_instruction_loss.csv",
+      "published_sha256": "dcfdb5266826c1dfd24c23c658aa2f57ec56c01a53906e577eae55c6540b4ec4",
+      "rows": 10,
+      "removed_columns": []
+    },
+    {
+      "source": "runs/assistant/inference/training_dashboard_20261104_212348/figures/02_300M预训练.png",
+      "source_sha256": "d9f0e4e68dcd05b9deacd92e2bc0da73912cab461b4b4b98c3676197d9aa098c",
+      "published": "docs/results/pretrain_300m.png",
+      "published_sha256": "d9f0e4e68dcd05b9deacd92e2bc0da73912cab461b4b4b98c3676197d9aa098c",
+      "copy_verified": true
+    },
+    {
+      "source": "runs/assistant/inference/training_dashboard_20261104_212348/figures/13_SFT最终对比.png",
+      "source_sha256": "a075e57a76fc39d319109d5a1fa9c13d0b2c6d232397772aa3d2f1fc2d66370e",
+      "published": "docs/results/sft_controls.png",
+      "published_sha256": "a075e57a76fc39d319109d5a1fa9c13d0b2c6d232397772aa3d2f1fc2d66370e",
+      "copy_verified": true
+    },
+    {
+      "source": "runs/assistant/inference/training_dashboard_20261104_212348/figures/14_LoRA最终对比.png",
+      "source_sha256": "dca1e57fe6bbf0466fef0d071f04e5b824a21880a71147151d8a1be3ab987e28",
+      "published": "docs/results/lora_comparison.png",
+      "published_sha256": "dca1e57fe6bbf0466fef0d071f04e5b824a21880a71147151d8a1be3ab987e28",
+      "copy_verified": true
+    },
+    {
+      "source": "runs/assistant/inference/training_dashboard_20261104_212348/figures/16_RL最终对比.png",
+      "source_sha256": "149f4dac35fe833c542912530efba5b267a4e5c61651e78d1fb21eb0205f3f5d",
+      "published": "docs/results/rl_comparison.png",
+      "published_sha256": "149f4dac35fe833c542912530efba5b267a4e5c61651e78d1fb21eb0205f3f5d",
+      "copy_verified": true
+    },
+    {
+      "source": "runs/assistant/inference/training_dashboard_20261104_212348/figures/17_best与last.png",
+      "source_sha256": "a1aebc3a1f06dd9f68c3251de686b1a85387a48abdf7750707109221461ae71c",
+      "published": "docs/results/best_last.png",
+      "published_sha256": "a1aebc3a1f06dd9f68c3251de686b1a85387a48abdf7750707109221461ae71c",
+      "copy_verified": true
+    }
+  ]
+}

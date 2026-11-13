@@ -1,0 +1,18 @@
+{
+  "project_root": "../..",
+  "output_dir": "artifacts/raw/massive",
+  "cache_dir": ".cache/data",
+  "max_docs": 40000,
+  "max_bytes": 150000000,
+  "sources": [{
+    "type": "massive_archive",
+    "url": "https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.1.tar.gz",
+    "expected_sha256": null,
+    "max_download_bytes": 1000000000,
+    "max_uncompressed_bytes": 4000000000,
+    "max_member_bytes": 150000000,
+    "max_members": 1000,
+    "locales": ["en-US", "zh-CN"]
+  }],
+  "note": "Run on the remote machine. Optional expected_sha256 verifies a known digest; otherwise the first HTTPS download records observed_sha256 as a version fingerprint, then cache reuse verifies that lock. It is not independent source authentication. MASSIVE data CC-BY-4.0; upstream code Apache-2.0."
+}

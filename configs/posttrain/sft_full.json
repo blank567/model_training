@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "project_root": "../..",
+  "stage": "sft",
+  "method": "full",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "base_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "train_file": "artifacts/tasks/massive/sft/train.jsonl",
+  "validation_file": "artifacts/tasks/massive/sft/validation.jsonl",
+  "output_dir": "artifacts/runs/sft_full",
+  "seed": 42,
+  "precision": "bf16",
+  "max_length": 1024,
+  "batch_size": 2,
+  "gradient_accumulation_steps": 8,
+  "train_token_budget": 200000,
+  "learning_rate": 0.00001,
+  "tensorboard": false,
+  "wandb": true, "wandb_project": "bilingual-training-lab", "wandb_mode": "online",
+  "budget": {
+    "hourly_rate_cny": 3.03,
+    "run_limit_cny": 80,
+    "project_limit_cny": 500,
+    "reserve_cny": 100,
+    "max_runtime_seconds": 7200
+  }
+}

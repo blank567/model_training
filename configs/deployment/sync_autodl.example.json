@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "host": "your-instance.example.com",
+  "port": 22,
+  "user": "root",
+  "ssh_config": "E:/ssh/config",
+  "identity_file": "tmp/ssh/id_ed25519",
+  "known_hosts_file": "tmp/ssh/known_hosts",
+  "remote_root": "/root/autodl-tmp/model_training",
+  "remote_python": "/root/miniconda3/bin/python",
+  "poll_seconds": 1.0,
+  "debounce_seconds": 1.0,
+  "retry_seconds": 10.0,
+  "timeout_seconds": 30.0
+}

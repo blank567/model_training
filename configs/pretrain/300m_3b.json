@@ -1,0 +1,49 @@
+{
+  "data_manifest": "artifacts/pretrain/bilingual_3b/manifest.json",
+  "output_dir": "runs/pretrain_300m_3b",
+  "model": {
+    "vocab_size": 32000,
+    "dim": 1024,
+    "n_layers": 24,
+    "n_heads": 16,
+    "n_kv_heads": 4,
+    "ffn_dim": 2816,
+    "max_seq_len": 1024,
+    "rope_theta": 10000.0,
+    "dropout": 0.1,
+    "tie_embeddings": true,
+    "activation_checkpointing": false
+  },
+  "train": {
+    "device": "cuda",
+    "dtype": "bf16",
+    "seed": 42,
+    "deterministic": true,
+    "seq_len": 1024,
+    "micro_batch_size": 8,
+    "gradient_accumulation_steps": 4,
+    "max_steps": 91553,
+    "learning_rate": 0.0003,
+    "min_lr_ratio": 0.1,
+    "warmup_steps": 1500,
+    "weight_decay": 0.1,
+    "max_grad_norm": 1.0,
+    "eval_interval": 500,
+    "eval_batches": 2,
+    "save_interval": 500,
+    "log_interval": 10,
+    "tensorboard": true,
+    "wandb": true,
+    "wandb_project": "bilingual-training-lab",
+    "wandb_mode": "online",
+    "wandb_run_name": "pretrain-300m-3b-zh-hans-en"
+  },
+  "budget": {
+    "hourly_rate_cny": 3.03,
+    "run_limit_cny": 180,
+    "project_limit_cny": 500,
+    "reserve_cny": 100,
+    "max_runtime_seconds": 259200,
+    "ledger_path": "runs/budget_ledger.json"
+  }
+}

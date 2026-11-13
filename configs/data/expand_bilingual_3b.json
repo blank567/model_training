@@ -1,0 +1,117 @@
+{
+  "project_root": "../..",
+  "parent_manifest": "artifacts/pretrain/wikipedia_1b/manifest.json",
+  "output_dir": "artifacts/pretrain/bilingual_3b",
+  "cache_dir": ".cache/data/expansion_2b",
+  "target_tokens_per_language": {
+    "en": 1000000000,
+    "zh": 1000000000
+  },
+  "min_free_bytes": 12884901888,
+  "batch_size": 64,
+  "progress_seconds": 10,
+  "delete_committed_cache": true,
+  "prepend_parent_train": true,
+  "chinese_normalization": "t2s",
+  "fingerprint_chars": 100,
+  "sources": [
+    {
+      "language": "zh",
+      "repository": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "config": "cmn_Hani",
+      "license": "ODC-By-1.0",
+      "data_files": [
+        {
+          "path": "data/cmn_Hani/train/000_00000.parquet",
+          "size": 4841624662,
+          "sha256": "3e43fefabc3ee500f9874655ece1776f96b81568cf33e0a6376835425ce42598"
+        },
+        {
+          "path": "data/cmn_Hani/train/000_00001.parquet",
+          "size": 4840805550,
+          "sha256": "1829410bee959d64fee8c34efd3e741f22c368cfe62aaa7a971a56afabe1d92f"
+        },
+        {
+          "path": "data/cmn_Hani/train/000_00002.parquet",
+          "size": 4841733364,
+          "sha256": "cd15dda2ecfa9e6817b2314cdb4cd1243ee13888e3b6c4a37a8bd7905f524eb5"
+        },
+        {
+          "path": "data/cmn_Hani/train/000_00003.parquet",
+          "size": 4842829789,
+          "sha256": "93a97c805b5501cf835d2dba64603227c722c6a5428db863f123bb9c6a0e450a"
+        },
+        {
+          "path": "data/cmn_Hani/train/000_00004.parquet",
+          "size": 4843157107,
+          "sha256": "4aea66f059a1246edb2f40f05303eaabcff0081b6967b3c51e5bddd847caa40a"
+        },
+        {
+          "path": "data/cmn_Hani/train/000_00005.parquet",
+          "size": 4841461023,
+          "sha256": "f566e76244187eb25f3439625f16214c3f6953b2b3cf6a5444dd294b63afdc95"
+        },
+        {
+          "path": "data/cmn_Hani/train/000_00006.parquet",
+          "size": 4842177087,
+          "sha256": "745aea760a3c612a935df6e984df668bc830434a804c7a1f91b7706f58211ce6"
+        },
+        {
+          "path": "data/cmn_Hani/train/000_00007.parquet",
+          "size": 4842331708,
+          "sha256": "ebefc80f8554601bd3909fc9417a50b54b84823b81e3c32131280493228e0548"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "repository": "HuggingFaceFW/fineweb-edu",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+      "config": "sample-10BT",
+      "license": "ODC-By-1.0",
+      "data_files": [
+        {
+          "path": "sample/10BT/000_00000.parquet",
+          "size": 2152819114,
+          "sha256": "b1ba7b2ce4cb5ea6ef42dca40263eabb85f37700d01693a68e9b30a31d78e871"
+        },
+        {
+          "path": "sample/10BT/001_00000.parquet",
+          "size": 2152222432,
+          "sha256": "3fcf2dc69cd52503986276d3d2d26a8c356d0f2ea28a0de4fdbda8cf87755693"
+        },
+        {
+          "path": "sample/10BT/002_00000.parquet",
+          "size": 2151796315,
+          "sha256": "547ae182d132c9f06b6ce63149567208ea9f57630bfd9b1a2938e504f0c9ebd7"
+        },
+        {
+          "path": "sample/10BT/003_00000.parquet",
+          "size": 2152437524,
+          "sha256": "22184e6eb25759ddd97783751ffc73e1705dfa2542e630dae1f2a8bac8ee6ddb"
+        },
+        {
+          "path": "sample/10BT/004_00000.parquet",
+          "size": 2152338550,
+          "sha256": "33557ddd87a07a4ae6fcaf7a4789c7b484e5cc0c273ca12a65b74200e6d8748b"
+        },
+        {
+          "path": "sample/10BT/005_00000.parquet",
+          "size": 2152189947,
+          "sha256": "e08d79927ecb377786572cd854817c748ceb8880878b1a0eb91abf8c85d505ea"
+        },
+        {
+          "path": "sample/10BT/006_00000.parquet",
+          "size": 2152689867,
+          "sha256": "554fa2613c9261d6c9c396caab881de3160175794c6c3e1856bf28a0e9cb9b76"
+        },
+        {
+          "path": "sample/10BT/007_00000.parquet",
+          "size": 2150686637,
+          "sha256": "4b7d1f697d4afff7f5f65cb7aa4d83acc6db716da4d46ea23399d0c50608c6e3"
+        }
+      ]
+    }
+  ]
+}

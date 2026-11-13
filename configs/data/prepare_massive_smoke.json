@@ -1,0 +1,13 @@
+{
+  "project_root": "../..",
+  "kind": "massive",
+  "source_version": "original-fixture-not-official-MASSIVE",
+  "inputs": ["examples/massive_fixture.jsonl"],
+  "output_dir": "examples/_outputs/tasks",
+  "overwrite": true,
+  "max_docs": 100,
+  "max_bytes": 100000,
+  "cross_split_duplicate_policy": "keep_evaluation",
+  "invalid_annotation_policy": "error",
+  "require_all_splits": true
+}

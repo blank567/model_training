@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "kind": "experiment_design",
+  "status": "implemented_learning_rate_screen_running",
+  "created_date": "2026-10-28",
+  "project_root": "../..",
+  "method": "custom_300m_lora_sft",
+  "document": "docs/lora-design-300m-20261028.md",
+  "start_after": [
+    "current_100k_full_sft_completed",
+    "current_final_evaluation_completed",
+    "gpu_idle",
+    "adapter_correctness_and_resume_checks_passed"
+  ],
+  "base_checkpoint": "runs/pretrain_300m_3b_20261025_150858/best.pt",
+  "base_checkpoint_sha256": "69b24779315561390bddbef18ce5ce9b505052a3ca697a0a651dfa6ea3c2bf45",
+  "frozen_full_sft_runtime_sha256": "0890bc473d14ed726362a6a4250d809c9389430f7786ab44fd41b8a021cd3872",
+  "data_manifest": "artifacts/posttrain/sft_expansion_20261027_215627/sft_100k/manifest.json",
+  "data_identity": "ad2e58f22c741c22ed029e2b53d67d5722b93e0c9dcbb88617598abcb4a6a3e3",
+  "adapter": {
+    "rank": 16,
+    "alpha": 32,
+    "scaling": "alpha_over_rank",
+    "dropout": 0.0,
+    "bias": "none",
+    "target_suffixes": [
+      "attn.q",
+      "attn.k",
+      "attn.v",
+      "attn.out",
+      "gate",
+      "up",
+      "down"
+    ],
+    "expected_target_modules": 168,
+    "expected_trainable_parameters": 6979584,
+    "freeze_embedding_lm_head_and_norms": true,
+    "quantization": false
+  },
+  "training_design": {
+    "precision": "bf16",
+    "seed": 42,
+    "micro_batch_size": 8,
+    "gradient_accumulation_steps": 4,
+    "effective_batch_size": 32,
+    "initial_learning_rate": 0.0001,
+    "learning_rate_candidates": [
+      5e-05,
+      0.0001,
+      0.0002
+    ],
+    "schedule_epochs": 3,
+    "stop_epochs": 2,
+    "max_schedule_steps": 9375,
+    "warmup_steps": 282,
+    "screen_pause_step": 3125,
+    "final_stop_step": 6250,
+    "min_lr_ratio": 0.1,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "max_grad_norm": 1.0,
+    "eval_interval": 100,
+    "save_interval": 100,
+    "log_interval": 10
+  },
+  "optional_followups": {
+    "rank_candidates": [
+      8,
+      16,
+      32
+    ],
+    "alpha_rule": "2_times_rank",
+    "target_scope_comparison": [
+      "q_v_only",
+      "attention_and_mlp"
+    ],
+    "full_cartesian_grid": false
+  },
+  "evaluation_design": {
+    "checkpoint_validation_examples": 995,
+    "auxiliary_development_examples": 2000,
+    "historical_primary_test_used_for_selection": true,
+    "current_auxiliary_test_will_be_used_by_full_run": true,
+    "new_final_test_required_before_lora_tuning": true,
+    "new_final_test_status": "frozen",
+    "new_final_test_examples": 1000,
+    "final_generated_examples_per_model": 1000,
+    "final_models": [
+      "selected_full_sft",
+      "selected_lora_sft"
+    ],
+    "generation_cap_tokens": 256,
+    "task_metrics_are_distinct_from_loss_eos_and_rouge": true,
+    "retain_pretraining_validation_monitor": true,
+    "frozen_protocol": "/root/autodl-tmp/model_training/artifacts/posttrain/lora_evaluation_20261028_190311/protocol.json",
+    "frozen_protocol_sha256": "9a26d3e02011f69b978f0fc79a440bba8052cae193c231eff13500fc9a881f11"
+  },
+  "implementation_design": {
+    "new_package": "src/llm_lora",
+    "new_entrypoint": "scripts/train_lora.py",
+    "preferred_adapter_api": "peft.inject_adapter_in_model",
+    "peft_project_pin": "0.17.1",
+    "config_compatibility_view_required": true,
+    "preserve_frozen_full_sft_source": true,
+    "complete_adapter_optimizer_scheduler_rng_sampler_resume": true
+  },
+  "execution": {
+    "controller": "/root/autodl-tmp/model_training/runs/assistant/system/lora_lr_screen_20261028_191900/state.json",
+    "runtime_sha256": "899d9750e6b9963cf0e5f60f22a3faf51655780d9519f919396da50fb0d3f914",
+    "stage_b_and_c_queued": false
+  }
+}

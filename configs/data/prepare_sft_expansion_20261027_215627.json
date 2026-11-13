@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "project_root": "../..",
+  "seed": 42,
+  "donor_manifest": "artifacts/posttrain/sft_300m_20261026_170531/manifest.json",
+  "donor_manifest_sha256": "705783eedff1d62685f739c73ce31303d162f4eacba71547cb07f59259fc00d5",
+  "reserve_dir": "artifacts/posttrain/sft_reserve_20261027",
+  "reserve_config_sha256": "1245b12b82f3d54a9b8d21767a4949b264aee4b079dd5a94f6081c2bd4500822",
+  "output_dir": "artifacts/posttrain/sft_expansion_20261027_215627",
+  "work_dir": "runs/assistant/data_prepare/sft_expansion_20261027_215627",
+  "train_targets": [
+    50000,
+    100000
+  ],
+  "max_sequence_tokens": 1024,
+  "preferred_sequence_tokens": 512,
+  "max_response_tokens": 512,
+  "near_duplicate_jaccard": 0.8,
+  "min_free_bytes": 19327352832,
+  "max_work_and_output_bytes": 6442450944,
+  "max_rss_bytes": 34359738368,
+  "max_runtime_seconds": 5400,
+  "task_weights": {
+    "summarization": 0.2,
+    "rewriting": 0.2,
+    "format_following": 0.15,
+    "grounded_qa": 0.15,
+    "extraction": 0.1,
+    "classification": 0.05,
+    "short_qa_or_other": 0.15
+  },
+  "known_rejections": [
+    {
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 16618,
+      "reason": "Boundary of the numeric interval is ambiguous for a unique reference answer."
+    },
+    {
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 47371,
+      "reason": "Algorithm-specific claims require domain verification before being used as a reference."
+    },
+    {
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 40736,
+      "reason": "Fruit description admits multiple answers and does not justify a unique classification."
+    },
+    {
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 40618,
+      "reason": "Specific venue and mountain names need location verification."
+    },
+    {
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 26026,
+      "reason": "Scientific causal assertion in the supplied text needs subject-matter verification."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 647,
+      "reason": "Answer reduces multiple stated leaf-shape possibilities to a single universal shape."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 11728,
+      "reason": "Answer introduces game details not supported by the provided passage."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 3459,
+      "reason": "Answer adds an unsupported comparative claim about glutinous rice."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 13147,
+      "reason": "Question asks for a count but the reference only lists names."
+    },
+    {
+      "dataset": "smol_smoltalk_0",
+      "row_index": 34323,
+      "reason": "Named logical fallacy requires verification; not suitable as an unchecked reference."
+    },
+    {
+      "dataset": "smol_smoltalk_0",
+      "row_index": 22099,
+      "reason": "Statistical analysis advice is outside this first short-task curriculum."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 8705,
+      "reason": "Cryptographic inputs description requires expert verification beyond the supplied passage."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 14021,
+      "reason": "Reference conflates spelling variants with alternate beverage names."
+    },
+    {
+      "dataset": "smol_smoltalk_0",
+      "row_index": 31901,
+      "reason": "Role-play advertises a fictional real-world service without clearly marking the unsupported itinerary."
+    }
+  ],
+  "rules": {
+    "chinese_simplified": true,
+    "current_training_data_unchanged": true,
+    "retain_donor_train": true,
+    "nested_training_sets": true,
+    "fixed_validation_test_pilot_bytes": true,
+    "content_review_required_before_publication": true,
+    "do_not_fill_shortfalls_with_unchecked_rows": true,
+    "no_model_training": true
+  }
+}

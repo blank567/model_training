@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "ssh_executable": "ssh",
+  "ssh_config": "tmp/wandb_network/ssh_config",
+  "remote_alias": "your-training-instance",
+  "local_relay_port": 17891,
+  "remote_proxy_port": 17890,
+  "upstream_proxy_port": 7890,
+  "log_dir": "runs/assistant/system/wandb_network"
+}

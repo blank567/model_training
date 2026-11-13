@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "project_root": "../..",
+  "output_dir": "artifacts/posttrain/sft_300m_20261026_164414",
+  "work_dir": "runs/sft_data_prepare_20261026_164414",
+  "seed": 42,
+  "min_free_bytes": 8589934592,
+  "parent_manifest": "artifacts/pretrain/bilingual_3b/manifest.json",
+  "parent_manifest_sha256": "f1dbbba35db3f414a36359f96c3a8a6a3b4bba1fb94b09284a5a0fef75c6c7b1",
+  "tokenizer_sha256": "6040c90c045836982a47bc0544942f122d0446bf9ed4d2ac1929befd0d4b86b3",
+  "targets": {
+    "train": 20000,
+    "validation": 1000,
+    "test": 1000,
+    "pilot": 2000
+  },
+  "max_sequence_tokens": 1024,
+  "preferred_sequence_tokens": 512,
+  "max_response_tokens": 512,
+  "language_supervised_token_share": {
+    "zh": 0.5,
+    "en": 0.5
+  },
+  "language_share_tolerance": 0.05,
+  "near_duplicate_jaccard": 0.8,
+  "sources": [
+    {
+      "name": "alpaca_gpt4_zh",
+      "language": "zh",
+      "format": "alpaca_json",
+      "repository": "Instruction-Tuning-with-GPT-4/GPT-4-LLM",
+      "revision": "80cda626ea305004be42426671c66efebbf22144",
+      "file": "data/alpaca_gpt4_data_zh.json",
+      "url": "https://raw.githubusercontent.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM/80cda626ea305004be42426671c66efebbf22144/data/alpaca_gpt4_data_zh.json",
+      "sha256": "6fcb98c6d79691d1f9a88ef513335da9124e7fdeef5103343f5d9f9a6e8f4903",
+      "size_bytes": 35100559,
+      "cache_path": ".cache/data/sft_300m/alpaca_gpt4_zh.json",
+      "license": "CC-BY-NC-4.0",
+      "author_notice": "Original authors restrict data to research use.",
+      "exclude_row_indices": [
+        512,
+        752,
+        10890,
+        13047,
+        21322,
+        24072,
+        25322,
+        27099,
+        30007,
+        38141
+      ]
+    },
+    {
+      "name": "smol_smoltalk_0",
+      "language": "en",
+      "format": "messages_parquet",
+      "repository": "HuggingFaceTB/smol-smoltalk",
+      "revision": "f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc",
+      "file": "data/train-00000-of-00004.parquet",
+      "url": "https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk/resolve/f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc/data/train-00000-of-00004.parquet",
+      "sha256": "498cd4580014f42c40cfde066573564ed28e3e1548a5566715b615f5ea932856",
+      "size_bytes": 229710350,
+      "cache_path": ".cache/data/sft_300m/smol_smoltalk_train_0.parquet",
+      "license": "Apache-2.0 (allowed newly generated source families only)",
+      "source_allowlist": [
+        "smol-magpie-ultra-short",
+        "smollm-rewrite-30k",
+        "smol-summarize-20k",
+        "smol-contraints"
+      ],
+      "exclude_row_indices": [
+        45700,
+        46632,
+        74945
+      ]
+    },
+    {
+      "name": "dolly",
+      "language": "en",
+      "format": "dolly_jsonl",
+      "repository": "databricks/databricks-dolly-15k",
+      "revision": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a",
+      "file": "databricks-dolly-15k.jsonl",
+      "url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a/databricks-dolly-15k.jsonl",
+      "sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+      "size_bytes": 13085339,
+      "cache_path": ".cache/data/sft_300m/dolly.jsonl",
+      "license": "CC-BY-SA-3.0",
+      "category_allowlist": [
+        "closed_qa",
+        "information_extraction",
+        "summarization"
+      ],
+      "require_context": true,
+      "exclude_row_indices": [
+        365,
+        1535,
+        5134,
+        6232
+      ]
+    }
+  ],
+  "revision_note": "v3: missing-referenced-material and clarification distinction, answer-side mathematical expression checks, and inline programming curriculum exclusion"
+}

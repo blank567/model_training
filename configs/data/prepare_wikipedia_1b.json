@@ -1,0 +1,34 @@
+{
+  "project_root": "../..",
+  "inputs": ["artifacts/raw/wikipedia_1b/raw/*.jsonl"],
+  "acquisition_manifest": "artifacts/raw/wikipedia_1b/acquisition_manifest.json",
+  "required_source_revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+  "output_dir": "artifacts/pretrain/wikipedia_1b",
+  "max_docs": 3000000,
+  "max_input_bytes": 7000000000,
+  "max_clean_bytes": 6500000000,
+  "max_train_tokens_per_language": {"en": 550000000, "zh": 550000000},
+  "min_train_tokens_per_language": {"en": 500000000, "zh": 500000000},
+  "min_stream_tokens": 1025,
+  "min_free_disk_bytes": 8589934592,
+  "encoding_batch_size": 64,
+  "encoding_batch_max_bytes": 4194304,
+  "seed": 42,
+  "split_fractions": {"train": 0.98, "validation": 0.01, "test": 0.01},
+  "quality": {
+    "min_chars": 80,
+    "max_chars": 100000,
+    "max_character_fraction": 0.5,
+    "min_unique_line_ratio": 0.5
+  },
+  "cross_split_duplicate_policy": "drop_conflicting_train",
+  "chinese_normalization": "t2s",
+  "frozen_holdout_manifest": "artifacts/pretrain/wikipedia/manifest.json",
+  "frozen_holdout_text_inputs": ["artifacts/raw/wikipedia/records.jsonl"],
+  "max_frozen_holdout_text_bytes": 200000000,
+  "tokenizer": {
+    "path": "artifacts/pretrain/wikipedia/tokenizer.json",
+    "vocab_size": 32000
+  },
+  "note": "New independent corpus for the 100M/1B-token experiment. Chinese train/validation/test text is normalized with pinned official OpenCC t2s before hashing/encoding. Old holdout source IDs are frozen; Chinese holdout tokens are rebuilt from verified original documents. Publish only if both training languages contain at least 500M tokens. Raw source data and prior runs remain unchanged."
+}

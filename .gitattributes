@@ -1,0 +1,6 @@
+# Preserve the exact bytes used by frozen runtime and publication SHA256 identities.
+# In particular, do not let a Windows autocrlf setting rewrite Python, shell or CSV.
+* -text
+# Historical frozen sources can end in blank lines; still reject trailing spaces
+# and spaces before tabs without reformatting those fingerprinted files.
+* whitespace=-blank-at-eof,blank-at-eol,space-before-tab,cr-at-eol

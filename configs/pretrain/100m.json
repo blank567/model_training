@@ -1,0 +1,24 @@
+{
+  "data_manifest": "artifacts/pretrain/wikipedia/manifest.json",
+  "output_dir": "runs/pretrain_100m",
+  "model": {
+    "vocab_size": 32000, "dim": 768, "n_layers": 12, "n_heads": 12,
+    "n_kv_heads": 4, "ffn_dim": 2048, "max_seq_len": 1024,
+    "rope_theta": 10000.0, "dropout": 0.1,
+    "tie_embeddings": true, "activation_checkpointing": true
+  },
+  "train": {
+    "device": "cuda", "dtype": "bf16", "seed": 42, "deterministic": true,
+    "seq_len": 1024, "micro_batch_size": 2, "gradient_accumulation_steps": 8,
+    "max_steps": 1000, "learning_rate": 0.0003, "min_lr_ratio": 0.1,
+    "warmup_steps": 100, "weight_decay": 0.1, "max_grad_norm": 1.0,
+    "eval_interval": 100, "eval_batches": 8, "save_interval": 100,
+    "log_interval": 10, "tensorboard": true,
+    "wandb": true, "wandb_project": "bilingual-training-lab", "wandb_mode": "online"
+  },
+  "budget": {
+    "hourly_rate_cny": 3.03, "run_limit_cny": 50, "project_limit_cny": 500,
+    "reserve_cny": 100, "max_runtime_seconds": 1800,
+    "ledger_path": "runs/budget_ledger.json"
+  }
+}

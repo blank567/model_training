@@ -1,0 +1,21 @@
+{
+  "data_manifest": "examples/_outputs/pretrain/manifest.json",
+  "output_dir": "runs/pretrain_smoke",
+  "model": {
+    "vocab_size": 512, "dim": 32, "n_layers": 2, "n_heads": 4,
+    "n_kv_heads": 2, "ffn_dim": 64, "max_seq_len": 32,
+    "dropout": 0.1, "activation_checkpointing": true
+  },
+  "train": {
+    "device": "cpu", "dtype": "fp32", "seq_len": 16,
+    "micro_batch_size": 1, "gradient_accumulation_steps": 2,
+    "max_steps": 4, "warmup_steps": 1, "eval_interval": 2,
+    "eval_batches": 1, "save_interval": 2, "log_interval": 1,
+    "tensorboard": false
+  },
+  "budget": {
+    "hourly_rate_cny": 0, "run_limit_cny": 1, "project_limit_cny": 500,
+    "reserve_cny": 100, "max_runtime_seconds": 120,
+    "ledger_path": "runs/budget_ledger.json"
+  }
+}

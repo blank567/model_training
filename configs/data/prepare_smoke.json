@@ -1,0 +1,14 @@
+{
+  "project_root": "../..",
+  "kind": "pretrain",
+  "inputs": ["examples/_outputs/acquired/records.jsonl"],
+  "output_dir": "examples/_outputs/pretrain",
+  "overwrite": true,
+  "max_docs": 100,
+  "max_bytes": 200000,
+  "max_tokens": 20000,
+  "seed": 42,
+  "tokenizer": {"vocab_size": 512, "min_frequency": 1},
+  "quality": {"min_chars": 20, "max_chars": 10000},
+  "require_all_streams": true
+}

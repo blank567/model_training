@@ -1,0 +1,12 @@
+{
+  "project_root": "../..",
+  "kind": "massive",
+  "source_version": "MASSIVE-1.1",
+  "inputs": ["artifacts/raw/massive/records.jsonl"],
+  "output_dir": "artifacts/tasks/massive",
+  "max_docs": 40000,
+  "max_bytes": 150000000,
+  "cross_split_duplicate_policy": "keep_evaluation",
+  "invalid_annotation_policy": "error",
+  "require_all_splits": true
+}

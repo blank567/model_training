@@ -1,0 +1,30 @@
+{
+  "project_root": "../..",
+  "output_dir": "artifacts/raw/wikipedia",
+  "cache_dir": ".cache/data",
+  "max_docs": 20000,
+  "max_bytes": 100000000,
+  "sources": [
+    {
+      "type": "wikipedia", "snapshot": "20231101", "language": "en",
+      "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+      "max_download_bytes": 420296449,
+      "data_files": [{
+        "path": "20231101.en/train-00000-of-00041.parquet",
+        "sha256": "382e7f6f09e488b24793a7f7cfc659879d5a22da2cf2efec6491665f0c019677",
+        "size_bytes": 420296449
+      }]
+    },
+    {
+      "type": "wikipedia", "snapshot": "20231101", "language": "zh",
+      "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+      "max_download_bytes": 587109027,
+      "data_files": [{
+        "path": "20231101.zh/train-00000-of-00006.parquet",
+        "sha256": "853ddf4a138c792ad7386d6de831788f96326c03e1e3349f7a315498392e8b56",
+        "size_bytes": 587109027
+      }]
+    }
+  ],
+  "license_notes": "Dataset card: CC-BY-SA-3.0 and GFDL; inspect upstream terms and keep attribution. Output byte limit is not a network byte limit for streaming Parquet."
+}

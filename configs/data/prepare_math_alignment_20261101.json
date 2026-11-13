@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "project_root": "../..",
+  "seed": 42,
+  "fixture": false,
+  "source_cache": "artifacts/research/math_alignment_sources_20261101",
+  "tokenizer": "artifacts/posttrain/sft_300m_20261026_170531/tokenizer.json",
+  "output_dir": "artifacts/posttrain/math_alignment_20261101_162944",
+  "work_dir": "runs/assistant/data_prepare/math_alignment_20261101_162944",
+  "counts": {
+    "train": 50000,
+    "validation": 2000,
+    "test_id": 1000,
+    "test_template": 1000
+  },
+  "nested_training_examples": [
+    2000,
+    10000
+  ],
+  "training_policy": {
+    "epochs": 1,
+    "stop_epochs": null
+  },
+  "public_tests_are_external_only": true,
+  "training_started": false
+}

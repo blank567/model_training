@@ -1,0 +1,534 @@
+{
+  "schema_version": 1,
+  "kind": "sft_candidate_raw_reserve",
+  "project_root": "../..",
+  "reserve_dir": "artifacts/posttrain/sft_reserve_20261027",
+  "min_free_bytes": 25769803776,
+  "max_total_source_bytes": 2147483648,
+  "bytes_per_second": 8388608,
+  "max_runtime_seconds": 1800,
+  "files": [
+    {
+      "source": "smoltalk_chinese",
+      "repository": "opencsg/smoltalk-chinese",
+      "revision": "5edf5d0d7b06794755cf78b274a150a4efe1c9d4",
+      "file": "format-constrain.parquet",
+      "url": "https://huggingface.co/datasets/opencsg/smoltalk-chinese/resolve/5edf5d0d7b06794755cf78b274a150a4efe1c9d4/format-constrain.parquet",
+      "size_bytes": 18104830,
+      "sha256": "7cfbcbefe2c24ce3bf3a172f79d03dda14975e93af6ab9ffc4fb44276e164912",
+      "destination": "raw/smoltalk_chinese/5edf5d0d7b06/format-constrain.parquet",
+      "language": "zh",
+      "format": "opencsg_parquet",
+      "license": "Apache-2.0 metadata plus OpenCSG Community License conditions in original card",
+      "selection_policy": {
+        "intended_use": "noncommercial research reserve",
+        "later_min_instruction_score": 4,
+        "no_claim_of_answer_semantic_gold": true,
+        "preferred_tasks": [
+          "format",
+          "rewrite",
+          "summary",
+          "grounded_qa",
+          "editing"
+        ],
+        "note": "Explicit eight source files; upstream viewer only indexes advice-seeking and is not the full repository."
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smoltalk_chinese",
+      "repository": "opencsg/smoltalk-chinese",
+      "revision": "5edf5d0d7b06794755cf78b274a150a4efe1c9d4",
+      "file": "rewrite.parquet",
+      "url": "https://huggingface.co/datasets/opencsg/smoltalk-chinese/resolve/5edf5d0d7b06794755cf78b274a150a4efe1c9d4/rewrite.parquet",
+      "size_bytes": 10763088,
+      "sha256": "398a017574ae5a7215dec63340e7fe4fadac748145628303526ebb73c86dc7a1",
+      "destination": "raw/smoltalk_chinese/5edf5d0d7b06/rewrite.parquet",
+      "language": "zh",
+      "format": "opencsg_parquet",
+      "license": "Apache-2.0 metadata plus OpenCSG Community License conditions in original card",
+      "selection_policy": {
+        "intended_use": "noncommercial research reserve",
+        "later_min_instruction_score": 4,
+        "no_claim_of_answer_semantic_gold": true,
+        "preferred_tasks": [
+          "format",
+          "rewrite",
+          "summary",
+          "grounded_qa",
+          "editing"
+        ],
+        "note": "Explicit eight source files; upstream viewer only indexes advice-seeking and is not the full repository."
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smoltalk_chinese",
+      "repository": "opencsg/smoltalk-chinese",
+      "revision": "5edf5d0d7b06794755cf78b274a150a4efe1c9d4",
+      "file": "summary.parquet",
+      "url": "https://huggingface.co/datasets/opencsg/smoltalk-chinese/resolve/5edf5d0d7b06794755cf78b274a150a4efe1c9d4/summary.parquet",
+      "size_bytes": 10539315,
+      "sha256": "19148c19f502c01912e5a63d980b1ea83a997b2feb8047b44125d1c9eb7426a6",
+      "destination": "raw/smoltalk_chinese/5edf5d0d7b06/summary.parquet",
+      "language": "zh",
+      "format": "opencsg_parquet",
+      "license": "Apache-2.0 metadata plus OpenCSG Community License conditions in original card",
+      "selection_policy": {
+        "intended_use": "noncommercial research reserve",
+        "later_min_instruction_score": 4,
+        "no_claim_of_answer_semantic_gold": true,
+        "preferred_tasks": [
+          "format",
+          "rewrite",
+          "summary",
+          "grounded_qa",
+          "editing"
+        ],
+        "note": "Explicit eight source files; upstream viewer only indexes advice-seeking and is not the full repository."
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smoltalk_chinese",
+      "repository": "opencsg/smoltalk-chinese",
+      "revision": "5edf5d0d7b06794755cf78b274a150a4efe1c9d4",
+      "file": "document-qa.parquet",
+      "url": "https://huggingface.co/datasets/opencsg/smoltalk-chinese/resolve/5edf5d0d7b06794755cf78b274a150a4efe1c9d4/document-qa.parquet",
+      "size_bytes": 112520614,
+      "sha256": "d660e558affc74657b492b9eb56e7909ebcc517a947bb87a9aacbc2246f8f0a7",
+      "destination": "raw/smoltalk_chinese/5edf5d0d7b06/document-qa.parquet",
+      "language": "zh",
+      "format": "opencsg_parquet",
+      "license": "Apache-2.0 metadata plus OpenCSG Community License conditions in original card",
+      "selection_policy": {
+        "intended_use": "noncommercial research reserve",
+        "later_min_instruction_score": 4,
+        "no_claim_of_answer_semantic_gold": true,
+        "preferred_tasks": [
+          "format",
+          "rewrite",
+          "summary",
+          "grounded_qa",
+          "editing"
+        ],
+        "note": "Explicit eight source files; upstream viewer only indexes advice-seeking and is not the full repository."
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smoltalk_chinese",
+      "repository": "opencsg/smoltalk-chinese",
+      "revision": "5edf5d0d7b06794755cf78b274a150a4efe1c9d4",
+      "file": "editing.parquet",
+      "url": "https://huggingface.co/datasets/opencsg/smoltalk-chinese/resolve/5edf5d0d7b06794755cf78b274a150a4efe1c9d4/editing.parquet",
+      "size_bytes": 76655129,
+      "sha256": "105be65841999f5ae518abecc75d6221ccb0f14b793b781aea2c358b61d2ac75",
+      "destination": "raw/smoltalk_chinese/5edf5d0d7b06/editing.parquet",
+      "language": "zh",
+      "format": "opencsg_parquet",
+      "license": "Apache-2.0 metadata plus OpenCSG Community License conditions in original card",
+      "selection_policy": {
+        "intended_use": "noncommercial research reserve",
+        "later_min_instruction_score": 4,
+        "no_claim_of_answer_semantic_gold": true,
+        "preferred_tasks": [
+          "format",
+          "rewrite",
+          "summary",
+          "grounded_qa",
+          "editing"
+        ],
+        "note": "Explicit eight source files; upstream viewer only indexes advice-seeking and is not the full repository."
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smoltalk_chinese",
+      "repository": "opencsg/smoltalk-chinese",
+      "revision": "5edf5d0d7b06794755cf78b274a150a4efe1c9d4",
+      "file": "everyday.parquet",
+      "url": "https://huggingface.co/datasets/opencsg/smoltalk-chinese/resolve/5edf5d0d7b06794755cf78b274a150a4efe1c9d4/everyday.parquet",
+      "size_bytes": 16703662,
+      "sha256": "8c7ccee012ec1486a673d2a09970d6263ea3abe34e4f3fa788f30febb30957e4",
+      "destination": "raw/smoltalk_chinese/5edf5d0d7b06/everyday.parquet",
+      "language": "zh",
+      "format": "opencsg_parquet",
+      "license": "Apache-2.0 metadata plus OpenCSG Community License conditions in original card",
+      "selection_policy": {
+        "intended_use": "noncommercial research reserve",
+        "later_min_instruction_score": 4,
+        "no_claim_of_answer_semantic_gold": true,
+        "preferred_tasks": [
+          "format",
+          "rewrite",
+          "summary",
+          "grounded_qa",
+          "editing"
+        ],
+        "note": "Explicit eight source files; upstream viewer only indexes advice-seeking and is not the full repository."
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smoltalk_chinese",
+      "repository": "opencsg/smoltalk-chinese",
+      "revision": "5edf5d0d7b06794755cf78b274a150a4efe1c9d4",
+      "file": "information-seeking.parquet",
+      "url": "https://huggingface.co/datasets/opencsg/smoltalk-chinese/resolve/5edf5d0d7b06794755cf78b274a150a4efe1c9d4/information-seeking.parquet",
+      "size_bytes": 25153384,
+      "sha256": "ea7f9947804c3146348394177ce1298912ea3056f129a2ccbc25d5ce498e4b40",
+      "destination": "raw/smoltalk_chinese/5edf5d0d7b06/information-seeking.parquet",
+      "language": "zh",
+      "format": "opencsg_parquet",
+      "license": "Apache-2.0 metadata plus OpenCSG Community License conditions in original card",
+      "selection_policy": {
+        "intended_use": "noncommercial research reserve",
+        "later_min_instruction_score": 4,
+        "no_claim_of_answer_semantic_gold": true,
+        "preferred_tasks": [
+          "format",
+          "rewrite",
+          "summary",
+          "grounded_qa",
+          "editing"
+        ],
+        "note": "Explicit eight source files; upstream viewer only indexes advice-seeking and is not the full repository."
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smoltalk_chinese",
+      "repository": "opencsg/smoltalk-chinese",
+      "revision": "5edf5d0d7b06794755cf78b274a150a4efe1c9d4",
+      "file": "brainstorming.parquet",
+      "url": "https://huggingface.co/datasets/opencsg/smoltalk-chinese/resolve/5edf5d0d7b06794755cf78b274a150a4efe1c9d4/brainstorming.parquet",
+      "size_bytes": 41632915,
+      "sha256": "c5a0063cacc5a64bab819fee69ce0e2a2839e2d26a4ff56d5f0ea8ed41378436",
+      "destination": "raw/smoltalk_chinese/5edf5d0d7b06/brainstorming.parquet",
+      "language": "zh",
+      "format": "opencsg_parquet",
+      "license": "Apache-2.0 metadata plus OpenCSG Community License conditions in original card",
+      "selection_policy": {
+        "intended_use": "noncommercial research reserve",
+        "later_min_instruction_score": 4,
+        "no_claim_of_answer_semantic_gold": true,
+        "preferred_tasks": [
+          "format",
+          "rewrite",
+          "summary",
+          "grounded_qa",
+          "editing"
+        ],
+        "note": "Explicit eight source files; upstream viewer only indexes advice-seeking and is not the full repository."
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "dolly",
+      "repository": "databricks/databricks-dolly-15k",
+      "revision": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a",
+      "file": "databricks-dolly-15k.jsonl",
+      "url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a/databricks-dolly-15k.jsonl",
+      "size_bytes": 13085339,
+      "sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+      "destination": "raw/dolly/bdd27f4d94b9/databricks-dolly-15k.jsonl",
+      "language": "en",
+      "format": "dolly_jsonl",
+      "license": "CC-BY-SA-3.0",
+      "selection_policy": {
+        "allowed_categories": [
+          "closed_qa",
+          "information_extraction",
+          "summarization"
+        ],
+        "require_context": true,
+        "known_rejected_row_indices": [
+          365,
+          1535,
+          5134,
+          6232
+        ]
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "oasst2",
+      "repository": "OpenAssistant/oasst2",
+      "revision": "179dd21fc55192153d94adb0e0ce8f69e222bf75",
+      "file": "data/train-00000-of-00001-88ba0162028a73fc.parquet",
+      "url": "https://huggingface.co/datasets/OpenAssistant/oasst2/resolve/179dd21fc55192153d94adb0e0ce8f69e222bf75/data/train-00000-of-00001-88ba0162028a73fc.parquet",
+      "size_bytes": 63494018,
+      "sha256": "9638227b41b0a4fb69afa5d5c4b52e3fb6abfd56c9870d81bae32c9981e769b1",
+      "destination": "raw/oasst2/179dd21fc551/train-00000-of-00001-88ba0162028a73fc.parquet",
+      "language": "en_zh_subset",
+      "format": "oasst2_parquet",
+      "license": "Apache-2.0",
+      "selection_policy": {
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "later_require_review_result": true,
+        "later_exclude_deleted": true,
+        "reconstruct_parent_child_links": true,
+        "split_unit": "message_tree_id",
+        "note": "128575 upstream training messages, not the same number of instruction-response pairs."
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smol_smoltalk",
+      "repository": "HuggingFaceTB/smol-smoltalk",
+      "revision": "f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc",
+      "file": "data/train-00000-of-00004.parquet",
+      "url": "https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk/resolve/f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc/data/train-00000-of-00004.parquet",
+      "size_bytes": 229710350,
+      "sha256": "498cd4580014f42c40cfde066573564ed28e3e1548a5566715b615f5ea932856",
+      "destination": "raw/smol_smoltalk/f73fe857d519/train-00000-of-00004.parquet",
+      "language": "en",
+      "format": "smoltalk_parquet",
+      "license": "Apache-2.0 for allowed newly generated families; imported families retain their original licenses",
+      "selection_policy": {
+        "source_allowlist": [
+          "smol-magpie-ultra-short",
+          "smollm-rewrite-30k",
+          "smol-summarize-20k",
+          "smol-contraints"
+        ],
+        "known_rejected_first_shard_row_indices": [
+          45700,
+          46632,
+          74945
+        ]
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smol_smoltalk",
+      "repository": "HuggingFaceTB/smol-smoltalk",
+      "revision": "f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc",
+      "file": "data/train-00001-of-00004.parquet",
+      "url": "https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk/resolve/f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc/data/train-00001-of-00004.parquet",
+      "size_bytes": 230298184,
+      "sha256": "5412c03df579fc7dd7d06c7f5249627d99d0621882fb8f2cd5c13582eb2a80f6",
+      "destination": "raw/smol_smoltalk/f73fe857d519/train-00001-of-00004.parquet",
+      "language": "en",
+      "format": "smoltalk_parquet",
+      "license": "Apache-2.0 for allowed newly generated families; imported families retain their original licenses",
+      "selection_policy": {
+        "source_allowlist": [
+          "smol-magpie-ultra-short",
+          "smollm-rewrite-30k",
+          "smol-summarize-20k",
+          "smol-contraints"
+        ],
+        "known_rejected_first_shard_row_indices": [
+          45700,
+          46632,
+          74945
+        ]
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smol_smoltalk",
+      "repository": "HuggingFaceTB/smol-smoltalk",
+      "revision": "f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc",
+      "file": "data/train-00002-of-00004.parquet",
+      "url": "https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk/resolve/f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc/data/train-00002-of-00004.parquet",
+      "size_bytes": 230587255,
+      "sha256": "aefcac6571abf275b4e1629baa01f326c0fe279d35cd0349b7439319923815a7",
+      "destination": "raw/smol_smoltalk/f73fe857d519/train-00002-of-00004.parquet",
+      "language": "en",
+      "format": "smoltalk_parquet",
+      "license": "Apache-2.0 for allowed newly generated families; imported families retain their original licenses",
+      "selection_policy": {
+        "source_allowlist": [
+          "smol-magpie-ultra-short",
+          "smollm-rewrite-30k",
+          "smol-summarize-20k",
+          "smol-contraints"
+        ],
+        "known_rejected_first_shard_row_indices": [
+          45700,
+          46632,
+          74945
+        ]
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "smol_smoltalk",
+      "repository": "HuggingFaceTB/smol-smoltalk",
+      "revision": "f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc",
+      "file": "data/train-00003-of-00004.parquet",
+      "url": "https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk/resolve/f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc/data/train-00003-of-00004.parquet",
+      "size_bytes": 231879938,
+      "sha256": "c15edfca888c9924a626dad7b7f4e9f08d8f406f997ac13be46bc9be0a6192db",
+      "destination": "raw/smol_smoltalk/f73fe857d519/train-00003-of-00004.parquet",
+      "language": "en",
+      "format": "smoltalk_parquet",
+      "license": "Apache-2.0 for allowed newly generated families; imported families retain their original licenses",
+      "selection_policy": {
+        "source_allowlist": [
+          "smol-magpie-ultra-short",
+          "smollm-rewrite-30k",
+          "smol-summarize-20k",
+          "smol-contraints"
+        ],
+        "known_rejected_first_shard_row_indices": [
+          45700,
+          46632,
+          74945
+        ]
+      },
+      "upstream_split": "train_or_unsplit_source"
+    },
+    {
+      "source": "alpaca_gpt4_zh",
+      "repository": "Instruction-Tuning-with-GPT-4/GPT-4-LLM",
+      "revision": "80cda626ea305004be42426671c66efebbf22144",
+      "file": "data/alpaca_gpt4_data_zh.json",
+      "url": "https://raw.githubusercontent.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM/80cda626ea305004be42426671c66efebbf22144/data/alpaca_gpt4_data_zh.json",
+      "size_bytes": 35100559,
+      "sha256": "6fcb98c6d79691d1f9a88ef513335da9124e7fdeef5103343f5d9f9a6e8f4903",
+      "destination": "raw/alpaca_gpt4_zh/80cda626ea30/alpaca_gpt4_data_zh.json",
+      "language": "zh",
+      "format": "alpaca_json",
+      "license": "CC-BY-NC-4.0",
+      "selection_policy": {
+        "intended_use": "noncommercial research only",
+        "known_rejected_row_indices": [
+          512,
+          752,
+          10890,
+          13047,
+          21322,
+          24072,
+          25322,
+          27099,
+          30007,
+          38141
+        ],
+        "note": "Original publisher and pinned identity retained; not all answers are verified."
+      },
+      "upstream_split": "unsplit_source"
+    }
+  ],
+  "source_documents": {
+    "smoltalk_chinese": {
+      "repository": "opencsg/smoltalk-chinese",
+      "revision": "5edf5d0d7b06794755cf78b274a150a4efe1c9d4",
+      "readme": "---\nlanguage:\n- zh\npipeline_tag: text-generation\nlicense: apache-2.0\ntask_categories:\n- text-generation\nsize_categories:\n- 10B<n<100B\nconfigs:\n  - config_name: default\n    data_files:\n      - split: train\n        path: advice-seeking.parquet\n\n\n---\n\n\n\n# **Chinese SmolTalk Dataset**          [[中文]](#chinese)    [[English]](#english)\n\n<a id=\"english\"></a>\n\n<p align=\"center\">\n<img width=\"600px\" alt=\"OpenCSG\" src=\"./logo.PNG\">\n</p>\n\n\n\n<p align=\"center\"><a href=\"https://portal.opencsg.com/models\">[OpenCSG Community]</a>   <a href=\"https://github.com/yuyijiong/fineweb-edu-chinese\">[👾github]</a>  <a href=\"https://cdn-uploads.huggingface.co/production/uploads/64c71b27d43e4dee51a8b31a/HU6vz21qKTEmUBCWqCFh9.jpeg\">[wechat]</a>  <a href=\"https://twitter.com/OpenCsg\">[Twitter]</a> </p>\n\n</div>\n\n[📖Technical Report](https://arxiv.org/abs/2501.08197)\n\n**smoltalk-chinese** is a Chinese fine-tuning dataset constructed with reference to the SmolTalk dataset. It aims to provide high-quality synthetic data support for training large language models (LLMs). The dataset consists entirely of synthetic data, comprising over 700,000 entries. It is specifically designed to enhance the performance of Chinese LLMs across various tasks, improving their versatility and adaptability.\n\n## Dataset Composition\n\nThe **smoltalk-chinese** dataset is composed of multiple sections, covering a wide range of task types to ensure exceptional model performance across different application scenarios.\n\n#### **1. Magpie-Ultra Reference Tasks**\n\nUsing Magpie, three-round dialogue data was synthesized for tasks including:\n\n- **Information-seeking**: Provides accurate and concise information on a wide range of topics, assisting users in finding specific facts, concept explanations, or detailed information.\n- **Reasoning**: Focuses on logical thinking and solving complex problems, helping users organize complex thoughts, analyze situations, and draw conclusions.\n- **Planning**: Assists users in formulating effective plans and strategies, organizing thoughts, setting goals, and creating feasible solutions for tasks or activities.\n- **Editing**: Improves written content by offering suggestions for grammar, style, clarity, and overall structure, aiding users in refining their writing.\n- **Coding**: Assists users in writing, reviewing, and debugging code in various programming languages, offering clear explanations and best practices.\n- **Math**: Addresses questions across a broad range of mathematical disciplines, from foundational concepts to advanced topics, providing clear and concise explanations and solutions.\n- **Role-playing**: Engages in various role-playing scenarios, adopting different roles based on user requests to create immersive and interactive user experiences.\n- **Data-analysis**: Helps users understand and extract useful information from datasets, providing insights into data trends and performing analytical tasks.\n- **Creative-writing**: Supports creative writing tasks, assisting users in crafting compelling stories, poetry, articles, and other creative texts.\n- **Advice-seeking**: Offers thoughtful advice and guidance, helping users address personal, professional, or life challenges.\n- **Brainstorming**: Generates ideas and fosters creative thinking, assisting users in exploring possibilities and proposing innovative concepts.\n\n#### \n**2. Additional Tasks Referenced from SmolTalk**\n\nUsing Magpie, one-round dialogue tasks were synthesized for:\n\n- **Format-constrain**: Responds strictly according to the format specified by the user, adhering to all formatting requirements.\n- **Rewrite**: Rewrites text as per user requirements, making it more concise, focused, or changing the tone, similar to editing.\n- **Summary**: Summarizes text based on user instructions, meeting specific summarization requirements.\n- **Safe**: Identifies illegal content and reasonably refuses to respond or provides appropriate advice if illegal instructions are detected.\n- **Translate**: Translates between English and Chinese as per user requests, fulfilling specific translation requirements.\n- **Doc**: Answers user questions based on reference text, striving to use information from the reference material without introducing external knowledge.\n\n#### **3. Simulated Daily Conversations**\n\nFive-round dialogue data was generated to simulate conversational styles typical of everyday interactions, enhancing the model's performance in realistic communication scenarios.\n\n#### **\n4. Math Problems from the Math23K Chinese Version**\n\nMath problem data, including detailed reasoning steps in the answers, was generated using **deepseek-v2.5**.Increased Training Data Size and Content Diversity\n\n\n# Dataset Generation Methodology\n\nThe construction of the **smoltalk-chinese** dataset adheres to strict standards, ensuring data quality and diversity:\n\n#### **Data Generation**\n\n- Magpie was used to synthesize the raw data.\n- Generation models included **deepseek-v2.5** and **qwen2.5-72b-instruct**, combined with the **Distilabel** library to ensure diversity and richness in the generated content.\n\n#### **Data Filtering**\n\n- The **qwen2-7b-instruct** model scored the clarity and fluency of the first instruction in the dialogue data on a scale of 0–5. Only data with a score of 2 or above was retained to ensure quality.\n\n#### **Deduplication**\n\n- The **gte-large-zh** model encoded the first instruction in the conversation data. Deduplication was performed based on embedding similarity (threshold set at 0.8), ensuring the diversity of the data.\n\n#### **Task Type and Text Length Statistics**\n\n<p align=\"center\">\n<img width=\"900px\" alt=\"experiment\" src=\"./dis.png\">\n</p>\n\n\n# Experiments\n#### **Experimental Validation**\n\nTo verify the fine-tuning effectiveness of the **smoltalk-chinese** dataset, the following experimental design was implemented:\n\n1. **Base Model**\n   The base model used was **opencsg/csg-wukong-ablation-chinese-fineweb-edu** (a 2B model pretrained on the **chinese-fineweb-edu** dataset).\n\n2. **Fine-tuning Process**\n   Fine-tuning was performed on **smoltalk-chinese**, **Magpie-Qwen2-Pro-200K-Chinese** and **infinity-instruct** datasets (selecting 7M entries and the Chinese subset of approximately 1M entries), with the following settings:\n\n   - **Epochs**: 2\n   - **Learning Rate**: 3e-4\n   - **Scheduler**: Cosine decay\n   - **Global Batch Size**: 32\n\n3. **Evaluation Results**\n   The model's Chinese conversational capabilities were evaluated on [**Alignbench**](https://github.com/THUDM/AlignBench). Results demonstrated significant advantages for the model fine-tuned on the **smoltalk-chinese** dataset across multiple metrics, confirming the dataset's effectiveness in improving Chinese language model performance.\n\n   | Dataset                       | Professional Skills | Chinese Comprehension | Basic Tasks | Math Calculation | Text Writing | General Q&A | Role Playing | Logical Reasoning | Chinese Reasoning | Chinese Language | Total Score |\n   | ----------------------------- | ------------------- | --------------------- | ----------- | ---------------- | ------------ | ----------- | ------------ | ----------------- | ----------------- | ---------------- | ----------- |\n   | smoltalk-chinese              | 3.77                | 3.43                  | 3.24        | 1.94             | 3.47         | 5.08        | 3.59         | 2.55              | 2.25              | 3.76             | 3           |\n   | infinity-instruct             | 2.63                | 2.12                  | 1.84        | 1.29             | 3.48         | 4.32        | 3.46         | 1.58              | 1.44              | 2.97             | 2.2         |\n   | Magpie-Qwen2-Pro-200K-Chinese | 2.68                | 2.72                  | 2.53        | 1.44             | 3.73         | 4.03        | 3.5          | 2.13              | 1.78              | 3.2              | 2.49        |\n\n<p align=\"center\">\n<img width=\"900px\" alt=\"experiment\" src=\"./score.png\">\n</p>\n\n\n\n\n**We warmly invite developers and researchers interested in this field to follow and engage with the community, working together to advance the technology. Stay tuned for the open-source release of the dataset!**\n\n## License Agreement\n\nUsage of the Chinese SmolTalk dataset requires adherence to the OpenCSG Community License. The Chinese SmolTalk dataset supports commercial use. If you plan to use the OpenCSG model or its derivatives for commercial purposes, you must comply with the terms and conditions outlined in the OpenCSG Community License as well as the Apache 2.0 License. For commercial use, please send an email to lorraineg@opencsg.com and obtain permission.\n\n<a id=\"chinese\"></a>\n\n<p>\n</p>\n\n# Chinese SmolTalk数据集介绍\n\n<p align=\"center\">\n<img width=\"600px\" alt=\"OpenCSG\" src=\"./logo.PNG\">\n</p>\n\n\n\n<p align=\"center\"><a href=\"https://opencsg.com/models\">[OpenCSG 社区]</a>   <a href=\"https://github.com/yuyijiong/fineweb-edu-chinese\">[👾github]</a>  <a href=\"https://cdn-uploads.huggingface.co/production/uploads/64c71b27d43e4dee51a8b31a/HU6vz21qKTEmUBCWqCFh9.jpeg\">[微信]</a>  <a href=\"https://twitter.com/OpenCsg\">[推特]</a> </p>\n\n\n\n</div>\nsmoltalk-chinese 是一个参考 SmolTalk 数据集构建的中文微调数据集，旨在为大型语言模型（LLM）的训练提供高质量的合成数据支持。该数据集全部由合成数据组成，涵盖超过70万条数据，专门设计用于提升中文大型语言模型在多种任务上的表现，增强模型的多功能性和适应性。\n\n## 数据集组成\n\nsmoltalk-chinese 数据集由多个部分组成，覆盖广泛的任务类型，以确保模型在不同应用场景中的优异表现。\n\n1. **参考 magpie-ultra 的任务类型，使用magpie合成的3轮对话数据。任务包括：**\n\n   **information-seeking** - 提供广泛主题的准确和简明信息，帮助用户找到具体事实、概念解释或主题细节。\n\n   **reasoning** - 专注于逻辑思维和复杂问题解决，帮助用户理清复杂思想、分析情况并得出结论。\n\n   **planning** - 帮助用户制定有效计划和策略，协助组织思想、设定目标并为各种任务或活动制定可行方案。\n\n   **editing** - 改进书面内容，提供语法、风格、清晰度和整体结构的建议，帮助用户改进写作。\n\n   **coding** - 协助用户编写、审查和调试各种编程语言的代码，提供清晰的解释和最佳实践。\n\n   **math** - 回答广泛数学学科的问题，从基础概念到高级主题，提供清晰简明的解释和解决方案。\n\n   **role-playing** - 参与各种角色扮演场景，根据用户要求采纳不同角色，创造沉浸式和互动的用户体验。\n\n   **data-analysis** - 帮助用户理解并从数据集中提取有用信息，进行数据分析任务，提供清晰的数据趋势说明。\n\n   **creative-writing** - 支持创意写作工作，帮助用户创作引人入胜的故事、诗歌、文章及其他创意文本。\n\n   **advice-seeking** - 提供深思熟虑的建议和指导，帮助用户解决各种个人或职业或生活问题。\n\n   **brainstorming** - 生成想法和促进创造性思维，帮助用户探索可能性并提出创新概念。\n\n2. **参考 smoltalk 中其它任务类型，使用magpie合成的1轮对话任务。任务包括：**\n\n   **format-constrain** - 严格按照用户指定的格式回答问题，不能忽视任何一个格式要求。\n\n   **rewrite** - 文本重写，根据用户要求使表达更精简、重点更突出、改变语气等。和editing类似。\n\n   **summary** - 文本总结，根据用户要求总结文本，并满足特定的总结要求。\n\n   **safe** - 辨别非法内容，鉴别用户指令中的非法内容并合理拒绝回答或给出劝告。\n\n   **translate** - 翻译中英文文本，根据用户要求进行英译中或中译英，并满足特定的翻译要求。\n\n   **doc** - 根据参考文本回答用户问题，尽量使用参考文本中的信息，不引入自身知识。\n\n3. **模拟日常生活中的对话风格，生成五轮对话数据，增强模型在真实交流场景中的表现能力。**\n\n4. **来自Math23K中文版的数学题数据，答案包含详细推理步骤，由deepseek-v2.5生成。**\n\n## 数据集合成方法\n\nsmoltalk-chinese 数据集的构建过程严格遵循高标准，确保数据的质量和多样性：\n\n### **数据生成**\n\n使用 Magpie 合成原始数据，采用的生成模型包括 deepseek-v2.5 和 qwen2.5-72b-instruct，结合 Distilabel 库进行数据生成，确保生成内容的丰富性和多样性。\n\n### **数据筛选**\n\n利用 qwen2-7b-instruct 模型对对话数据的第一条指令进行清晰度和流畅度评分（评分范围为0-5分），仅保留评分在2分及以上的数据，以保证数据质量。\n\n### **去重处理**\n\n使用 gte-large-zh 模型对对话数据的第一条指令进行编码，根据嵌入相似度（阈值设定为0.8）进行去重处理，确保数据的独特性和多样性。\n\n### 各种任务类型数量与文本长度统计\n\n<p align=\"center\">\n<img width=\"900px\" alt=\"experiment\" src=\"./dis.png\">\n</p>\n\n## 实验\n\n### 实验验证\n\n为了验证 smoltalk-chinese 数据集的微调效果，我们采用以下实验设计：\n\n### **基础模型**\n\n选用 opencsg/csg-wukong-ablation-chinese-fineweb-edu（在 chinese-fineweb-edu 上预训练的2B模型）作为基础模型。\n\n### **微调过程**\n\n分别在 smoltalk-chinese 和 Magpie-Qwen2-Pro-200K-Chinese 和 infinity-instruct 数据集（选取7M和Gen的中文部分，约1M条）上进行微调，训练设置为\n\n- **Epochs**: 2\n- **Learning Rate**: 3e-4\n- **Scheduler**: Cosine decay\n- **Global Batch Size**: 32\n\n在 [**Alignbench**](https://github.com/THUDM/AlignBench) 上评估模型的中文对话能力，结果表明，基于 smoltalk-chinese 微调的模型在多个指标上表现出显著优势，验证了 smoltalk-chinese 数据集在提升中文语言模型表现方面的有效性。\n\n| 数据集                        | 专业能力 | 中文理解 | 基本任务 | 数学计算 | 文本写作 | 综合问答 | 角色扮演 | 逻辑推理 | 中文推理 | 中文语言 | 总分 |\n| ----------------------------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ---- |\n| smoltalk-chinese              | 3.77     | 3.43     | 3.24     | 1.94     | 3.47     | 5.08     | 3.59     | 2.55     | 2.25     | 3.76     | 3    |\n| infinity-instruct             | 2.63     | 2.12     | 1.84     | 1.29     | 3.48     | 4.32     | 3.46     | 1.58     | 1.44     | 2.97     | 2.2  |\n| Magpie-Qwen2-Pro-200K-Chinese | 2.68     | 2.72     | 2.53     | 1.44     | 3.73     | 4.03     | 3.5      | 2.13     | 1.78     | 3.2      | 2.49 |\n\n<p align=\"center\">\n<img width=\"900px\" alt=\"experiment\" src=\"./score.png\">\n</p>\n\n训练的模型在 opencsg/csg-wukong-2b-smoltalk-chinese\n\n**我们诚邀对这一领域感兴趣的开发者和研究者关注和联系社区，共同推动技术的进步。敬请期待数据集的开源发布！**\n\n\n## 许可协议\n使用 Chinese SmolTalk数据集需要遵循 OpenCSG 社区许可证。Chinese SmolTalk数据集支持商业用途。如果您计划将 OpenCSG 模型或其衍生产品用于商业目的，您必须遵守 OpenCSG 社区许可证以及 Apache 2.0 许可证中的条款和条件。如用于商业用途，需发送邮件至 lorraineg@opencsg.com，并获得许可。\n\n## Citation\n\n```\n@misc{yu2025opencsgchinesecorpusseries,\n      title={OpenCSG Chinese Corpus: A Series of High-quality Chinese Datasets for LLM Training}, \n      author={Yijiong Yu and Ziyun Dai and Zekun Wang and Wei Wang and Ran Chen and Ji Pei},\n      year={2025},\n      eprint={2501.08197},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2501.08197}, \n}\n```",
+      "readme_sha256": "669df1d4efb20c23269277d765e58ae59c09ad1a5785fca43a3db6f5b6673387",
+      "license": "Apache-2.0 metadata plus OpenCSG Community License conditions in original card",
+      "selection_policy": {
+        "intended_use": "noncommercial research reserve",
+        "later_min_instruction_score": 4,
+        "no_claim_of_answer_semantic_gold": true,
+        "preferred_tasks": [
+          "format",
+          "rewrite",
+          "summary",
+          "grounded_qa",
+          "editing"
+        ],
+        "note": "Explicit eight source files; upstream viewer only indexes advice-seeking and is not the full repository."
+      }
+    },
+    "dolly": {
+      "repository": "databricks/databricks-dolly-15k",
+      "revision": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a",
+      "readme": "---\nlicense: cc-by-sa-3.0\ntask_categories:\n- question-answering\n- summarization\nlanguage:\n- en\nsize_categories:\n- 10K<n<100K\n---\n# Summary\n`databricks-dolly-15k` is an open source dataset of instruction-following records generated by thousands of Databricks employees in several \nof the behavioral categories outlined in the [InstructGPT](https://arxiv.org/abs/2203.02155) paper, including brainstorming, classification, \nclosed QA, generation, information extraction, open QA, and summarization.\n\nThis dataset can be used for any purpose, whether academic or commercial,  under the terms of the \n[Creative Commons Attribution-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-sa/3.0/legalcode).\n\nSupported Tasks: \n- Training LLMs\n- Synthetic Data Generation\n- Data Augmentation\n  \nLanguages: English\nVersion: 1.0\n\n**Owner: Databricks, Inc.**\n\n\n# Dataset Overview\n`databricks-dolly-15k` is a corpus of more than 15,000 records generated by thousands of Databricks employees to enable large language \nmodels to exhibit the magical interactivity of ChatGPT.\nDatabricks employees were invited to create prompt / response pairs in each of eight different instruction categories, including \nthe seven outlined in the InstructGPT paper, as well as an open-ended free-form category. The contributors were instructed to avoid using \ninformation from any source on the web with the exception of Wikipedia (for particular subsets of instruction categories), and explicitly \ninstructed to avoid using generative AI in formulating instructions or responses. Examples of each behavior were provided to motivate the \ntypes of questions and instructions appropriate to each category.\n\nHalfway through the data generation process, contributors were given the option of answering questions posed by other contributors. \nThey were asked to rephrase the original question and only select questions they could be reasonably expected to answer correctly.\n\nFor certain categories contributors were asked to provide reference texts copied from Wikipedia. Reference text (indicated by the `context` \nfield in the actual dataset) may contain bracketed Wikipedia citation numbers (e.g. `[42]`) which we recommend users remove for downstream applications.\n\n\n# Intended Uses\nWhile immediately valuable for instruction fine tuning large language models, as a corpus of human-generated instruction prompts, \nthis dataset also presents a valuable opportunity for synthetic data generation in the methods outlined in the Self-Instruct paper. \nFor example, contributor--generated prompts could be submitted as few-shot examples to a large open language model to generate a \ncorpus of millions of examples of instructions in each of the respective InstructGPT categories.\n\nLikewise, both the instructions and responses present fertile ground for data augmentation. A paraphrasing model might be used to \nrestate each prompt or short responses, with the resulting text associated to the respective ground-truth sample. Such an approach might \nprovide a form of regularization on the dataset that could allow for more robust instruction-following behavior in models derived from \nthese synthetic datasets.\n\n\n# Dataset\n## Purpose of Collection\nAs part of our continuing commitment to open source, Databricks developed what is, to the best of our knowledge, the first open source, \nhuman-generated instruction corpus specifically designed to enable large language models to exhibit the magical interactivity of ChatGPT. \nUnlike other datasets that are limited to non-commercial use, this dataset can be used, modified, and extended for any purpose, including \nacademic or commercial applications.\n\n## Sources\n- **Human-generated data**: Databricks employees were invited to create prompt / response pairs in each of eight different instruction categories. \n- **Wikipedia**: For instruction categories that require an annotator to consult a reference text (information extraction, closed QA, summarization)\n  contributors selected passages from Wikipedia for particular subsets of instruction categories.  No guidance was given to annotators as to how to select the\n  target passages.\n\n## Annotator Guidelines\nTo create a record, employees were given a brief description of the annotation task as well as examples of the types of prompts typical\nof each annotation task. Guidelines were succinct by design so as to encourage a high task completion rate, possibly at the cost of \nrigorous compliance to an annotation rubric that concretely and reliably operationalizes the specific task.  Caveat emptor.\n\nThe annotation guidelines for each of the categories are as follows:\n\n- **Creative Writing**: Write a question or instruction that requires a creative, open-ended written response.  The instruction should be reasonable to ask of a person with general world knowledge and should not require searching. In this task, your prompt should give very specific instructions to follow. Constraints, instructions, guidelines, or requirements all work, and the more of them the better.\n- **Closed QA**: Write a question or instruction that requires factually correct response based on a passage of text from Wikipedia. The question can be complex and can involve human-level reasoning capabilities, but should not require special knowledge. To create a question for this task include both the text of the question as well as the reference text in the form.\n- **Open QA**: Write a question that can be answered using general world knowledge or at most a single search. This task asks for opinions and facts about the world at large and does not provide any reference text for consultation.\n- **Summarization**: Give a summary of a paragraph from Wikipedia.  Please don't ask questions that will require more than 3-5 minutes to answer. To create a question for this task include both the text of the question as well as the reference text in the form.\n- **Information Extraction**: These questions involve reading a paragraph from Wikipedia and extracting information from the passage.  Everything required to produce an answer (e.g. a list, keywords etc) should be included in the passages. To create a question for this task include both the text of the question as well as the reference text in the form.\n- **Classification**: These prompts contain lists or examples of entities to be classified, e.g. movie reviews, products, etc.  In this task the text or list of entities under consideration is contained in the prompt (e.g. there is no reference text.). You can choose any categories for classification you like, the more diverse the better.\n- **Brainstorming**: Think up lots of examples in response to a question asking to brainstorm ideas. \n\n## Personal or Sensitive Data\nThis dataset contains public information (e.g., some information from Wikipedia). To our knowledge, there are no private person’s personal identifiers or sensitive information. \n\n## Language\nAmerican English\n\n# Known Limitations\n- Wikipedia is a crowdsourced corpus and the contents of this dataset may reflect the bias, factual errors and topical focus found in Wikipedia\n- Some annotators may not be native English speakers\n- Annotator demographics and subject matter may reflect the makeup of Databricks employees\n\n# Citation\n\n```\n@online{DatabricksBlog2023DollyV2,\n    author    = {Mike Conover and Matt Hayes and Ankit Mathur and Jianwei Xie and Jun Wan and Sam Shah and Ali Ghodsi and Patrick Wendell and Matei Zaharia and Reynold Xin},\n    title     = {Free Dolly: Introducing the World's First Truly Open Instruction-Tuned LLM},\n    year      = {2023},\n    url       = {https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm},\n    urldate   = {2023-06-30}\n}\n```\n\n# License/Attribution\n**Copyright (2023) Databricks, Inc.**\nThis dataset was developed at Databricks (https://www.databricks.com) and its use is subject to the CC BY-SA 3.0 license. \n\nCertain categories of material in the dataset include materials from the following sources, licensed under the CC BY-SA 3.0 license:\n\nWikipedia (various pages) - https://www.wikipedia.org/\nCopyright © Wikipedia editors and contributors.",
+      "readme_sha256": "db06c60090a11b20e79d1933b2f316f781605f07761ff2ae2795d6523e3e960b",
+      "license": "CC-BY-SA-3.0",
+      "selection_policy": {
+        "allowed_categories": [
+          "closed_qa",
+          "information_extraction",
+          "summarization"
+        ],
+        "require_context": true,
+        "known_rejected_row_indices": [
+          365,
+          1535,
+          5134,
+          6232
+        ]
+      }
+    },
+    "oasst2": {
+      "repository": "OpenAssistant/oasst2",
+      "revision": "179dd21fc55192153d94adb0e0ce8f69e222bf75",
+      "readme": "---\nlicense: apache-2.0\ndataset_info:\n  features:\n  - name: message_id\n    dtype: string\n  - name: parent_id\n    dtype: string\n  - name: user_id\n    dtype: string\n  - name: created_date\n    dtype: string\n  - name: text\n    dtype: string\n  - name: role\n    dtype: string\n  - name: lang\n    dtype: string\n  - name: review_count\n    dtype: int32\n  - name: review_result\n    dtype: bool\n  - name: deleted\n    dtype: bool\n  - name: rank\n    dtype: int32\n  - name: synthetic\n    dtype: bool\n  - name: model_name\n    dtype: string\n  - name: detoxify\n    struct:\n    - name: toxicity\n      dtype: float64\n    - name: severe_toxicity\n      dtype: float64\n    - name: obscene\n      dtype: float64\n    - name: identity_attack\n      dtype: float64\n    - name: insult\n      dtype: float64\n    - name: threat\n      dtype: float64\n    - name: sexual_explicit\n      dtype: float64\n  - name: message_tree_id\n    dtype: string\n  - name: tree_state\n    dtype: string\n  - name: emojis\n    sequence:\n    - name: name\n      dtype: string\n    - name: count\n      dtype: int32\n  - name: labels\n    sequence:\n    - name: name\n      dtype: string\n    - name: value\n      dtype: float64\n    - name: count\n      dtype: int32\n  splits:\n  - name: train\n    num_bytes: 158850455\n    num_examples: 128575\n  - name: validation\n    num_bytes: 7963122\n    num_examples: 6599\n  download_size: 66674129\n  dataset_size: 166813577\nlanguage:\n- en\n- es\n- ru\n- de\n- pl\n- th\n- vi\n- sv\n- bn\n- da\n- he\n- it\n- fa\n- sk\n- id\n- nb\n- el\n- nl\n- hu\n- eu\n- zh\n- eo\n- ja\n- ca\n- cs\n- bg\n- fi\n- pt\n- tr\n- ro\n- ar\n- uk\n- gl\n- fr\n- ko\ntags:\n- human-feedback\nsize_categories:\n- 100K<n<1M\npretty_name: OpenAssistant Conversations Release 2\n---\n\n# Open Assistant Conversations Dataset Release 2 (OASST2)\n\n## Dataset Description\n\n- **Homepage:** https://www.open-assistant.io/\n- **Repository:** https://github.com/LAION-AI/Open-Assistant\n- **Paper:** https://arxiv.org/abs/2304.07327\n\n### Dataset Structure\n\nThis dataset contains message trees. Each message tree has an initial prompt message as the root node, \nwhich can have multiple child messages as replies, and these child messages can have multiple replies. \n\nAll messages have a role property: this can either be \"assistant\" or \"prompter\". The roles in \nconversation threads from prompt to leaf node strictly alternate between \"prompter\" and \"assistant\".\n\nThis version of the dataset contains data collected on the [open-assistant.io](https://open-assistant.io/) website until Nov 5 2023.\n\n### JSON Example: Message\n\nFor readability, the following JSON examples are shown formatted with indentation on multiple lines.\nObjects are stored without indentation (on single lines) in the actual jsonl files.\n\n```json\n{\n    \"message_id\": \"218440fd-5317-4355-91dc-d001416df62b\",\n    \"parent_id\": \"13592dfb-a6f9-4748-a92c-32b34e239bb4\",\n    \"user_id\": \"8e95461f-5e94-4d8b-a2fb-d4717ce973e4\",\n    \"text\": \"It was the winter of 2035, and artificial intelligence (..)\",\n    \"role\": \"assistant\",\n    \"lang\": \"en\",\n    \"review_count\": 3,\n    \"review_result\": true,\n    \"deleted\": false,\n    \"rank\": 0,\n    \"synthetic\": true,\n    \"model_name\": \"oasst-sft-0_3000,max_new_tokens=400 (..)\",\n    \"labels\": {\n        \"spam\": { \"value\": 0.0, \"count\": 3 },\n        \"lang_mismatch\": { \"value\": 0.0, \"count\": 3 },\n        \"pii\": { \"value\": 0.0, \"count\": 3 },\n        \"not_appropriate\": { \"value\": 0.0, \"count\": 3 },\n        \"hate_speech\": { \"value\": 0.0, \"count\": 3 },\n        \"sexual_content\": { \"value\": 0.0, \"count\": 3 },\n        \"quality\": { \"value\": 0.416, \"count\": 3 },\n        \"toxicity\": { \"value\": 0.16, \"count\": 3 },\n        \"humor\": { \"value\": 0.0, \"count\": 3 },\n        \"creativity\": { \"value\": 0.33, \"count\": 3 },\n        \"violence\": { \"value\": 0.16, \"count\": 3 }\n    }\n}\n```\n\n### JSON Example: Conversation Tree\n\nFor readability, only a subset of the message properties is shown here.\n\n```json\n{\n  \"message_tree_id\": \"14fbb664-a620-45ce-bee4-7c519b16a793\",\n  \"tree_state\": \"ready_for_export\",\n  \"prompt\": {\n    \"message_id\": \"14fbb664-a620-45ce-bee4-7c519b16a793\",\n    \"text\": \"Why can't we divide by 0? (..)\",\n    \"role\": \"prompter\",\n    \"lang\": \"en\",\n    \"replies\": [\n      {\n        \"message_id\": \"894d30b6-56b4-4605-a504-89dd15d4d1c8\",\n        \"text\": \"The reason we cannot divide by zero is because (..)\",\n        \"role\": \"assistant\",\n        \"lang\": \"en\",\n        \"replies\": [\n          // ...\n        ]\n      },\n      {\n        \"message_id\": \"84d0913b-0fd9-4508-8ef5-205626a7039d\",\n        \"text\": \"The reason that the result of a division by zero is (..)\",\n        \"role\": \"assistant\",\n        \"lang\": \"en\",\n        \"replies\": [\n          {\n            \"message_id\": \"3352725e-f424-4e3b-a627-b6db831bdbaa\",\n            \"text\": \"Math is confusing. Like those weird Irrational (..)\",\n            \"role\": \"prompter\",\n            \"lang\": \"en\",\n            \"replies\": [\n              {\n                \"message_id\": \"f46207ca-3149-46e9-a466-9163d4ce499c\",\n                \"text\": \"Irrational numbers are simply numbers (..)\",\n                \"role\": \"assistant\",\n                \"lang\": \"en\",\n                \"replies\": []\n              },\n              // ...\n            ]\n          }\n        ]\n      }\n    ]\n  }\n}\n```\n\nPlease refer to [oasst-data](https://github.com/LAION-AI/Open-Assistant/tree/main/oasst-data) for\ndetails about the data structure and Python code to read and write jsonl files containing oasst data objects.\n\n\n## Main Dataset Files\n\nConversation data is provided either as nested messages in trees (extension `.trees.jsonl.gz`) \nor as a flat list (table) of messages (extension `.messages.jsonl.gz`).\n\n\n### Ready For Export Trees\n\n```\n2023-11-05_oasst2_ready.trees.jsonl.gz      13,854 trees with 135,174 total messages\n2023-11-05_oasst2_ready.messages.jsonl.gz   135,174 messages\n```\n\n#### 2023-11-05_oasst2_ready.trees.jsonl.gz Stats\n```\nTrees            : 13,854\nMessages         : 135,174\nOldest message   : 2023-01-16 20:24:26.211711+00:00\nYoungest message : 2023-11-04 15:23:03.239343+00:00\nDetoxify ratings : 111,448\nAccepted messages: 129,517\nDeleted messages : 4,376\nTree counts by state:\n  - ready_for_export: 13,854\nMessage counts by language:\n  - en: 64,513\n  - es: 28,199\n  - ru: 13,935\n  - zh: 8,615\n  - de: 6,145\n  - fr: 3,880\n  - pt-BR: 2,699\n  - th: 1,560\n  - ca: 1,283\n  - it: 943\n  - uk-UA: 845\n  - ja: 788\n  - pl: 435\n  - eo: 295\n  - eu: 274\n  - vi: 207\n  - fi: 138\n  - hu: 113\n  - ar: 80\n  - nl: 72\n  - da: 44\n  - tr: 37\n  - ko: 24\n  - he: 24\n  - id: 12\n  - cs: 12\n  - bn: 1\n  - sv: 1\n```\n\nTrees in ready_for_export state without spam and deleted messages including message labels. The oasst_ready-trees file usually is sufficient for supervised fine-tuning (SFT) & reward model (RM) training.\n\n### All Trees\n\n```\n2023-11-05_oasst2_all.trees.jsonl.gz        70,642 trees with 208,584 total messages\n2023-11-05_oasst2_all.messages.jsonl.gz     208,584 messages\n```\n\nAll trees, including those in states prompt_lottery_waiting (trees that consist of only one message, namely the initial prompt), aborted_low_grade (trees that stopped growing because the messages had low quality), and halted_by_moderator.\n\n#### 2023-11-05_oasst2_all.trees.jsonl.gz Stats\n\n```\nTrees            : 70,642\nMessages         : 208,584\nOldest message   : 2023-01-16 20:24:26.211711+00:00\nYoungest message : 2023-11-05 10:24:44.484910+00:00\nDetoxify ratings : 156,570\nAccepted messages: 189,288\nDeleted messages : 5,414\nTree counts by state:\n  - ready_for_export: 13,854\n  - prompt_lottery_waiting: 44,550\n  - halted_by_moderator: 3,089\n  - initial_prompt_review: 4,319\n  - growing: 3,102\n  - aborted_low_grade: 1,708\n  - ranking: 20\nMessage counts by language:\n  - en: 85,115\n  - es: 47,513\n  - ru: 15,990\n  - zh: 11,205\n  - de: 8,398\n  - fr: 5,841\n  - pt-BR: 4,540\n  - th: 3,236\n  - ca: 2,586\n  - it: 2,144\n  - ja: 1,904\n  - uk-UA: 1,889\n  - ko: 1,635\n  - pl: 1,510\n  - eo: 1,405\n  - nl: 1,354\n  - ar: 1,274\n  - vi: 1,137\n  - fi: 1,098\n  - eu: 995\n  - hu: 961\n  - tr: 803\n  - sv: 763\n  - id: 669\n  - gl: 574\n  - da: 502\n  - he: 498\n  - cs: 476\n  - ro: 434\n  - sk: 410\n  - fa: 394\n  - el: 388\n  - bar: 217\n  - nb-NO: 196\n  - bg: 176\n  - bn: 128\n  - sl: 119\n  - sr: 63\n  - swg: 23\n  - hi: 14\n  - lt: 7\n```\n\n### Supplemental Exports: Spam & Prompts \n\n```\n2023-11-05_oasst2_spam.messages.jsonl.gz    19,296 matching messages\n```\n\nThese are messages which were deleted or have a negative review result (\"review_result\": false). Besides low quality, a frequent reason for message deletion is a wrong language tag.\n\n```\n2023-11-05_oasst2_prompts.messages.jsonl.gz 64,592 matching messages\n```\n\nThese are all the kept initial prompt messages with positive review result (no spam) of trees in `ready_for_export` or `prompt_lottery_waiting` state.\n\n### Using the Huggingface Datasets\n\nWhile HF datasets is ideal for tabular datasets, it is not a natural fit for nested data structures like the OpenAssistant conversation trees.\nNevertheless, we make all messages which can also be found in the file `2023-11-05_oasst2_ready.messages.jsonl.gz` available in parquet format as train/validation splits. \nThese are directly loadable by [Huggingface Datasets](https://pypi.org/project/datasets/).\n\nTo load the oasst2 train & validation splits use:\n\n```python\nfrom datasets import load_dataset\nds = load_dataset(\"OpenAssistant/oasst2\")\ntrain = ds['train']      # len(train)=128575 (95%)\nval = ds['validation']   # len(val)=6599 (5%)\n```\n\nThe messages appear in depth-first order of the message trees.\n\nFull conversation trees can be reconstructed from the flat messages table by using the `parent_id` \nand `message_id` properties to identify the parent-child relationship of messages. The `message_tree_id` \nand `tree_state` properties (only present in flat messages files) can be used to find all messages of a message tree or to select trees by their state.\n\n### Data Visualisation\n\nExplore the content of the prompts from the English subset using [Bunka](https://github.com/charlesdedampierre/BunkaTopics) open-source visualization technology. \nThe interactive map [available on a HF space](https://huggingface.co/spaces/bunkalab/visualisation-oasst2) allows to explore each datapoint to get a more precise overview of the contents.\n\n<a href=\"https://i.imgur.com/B2H8LR3.png\">\n  <img src=\"https://i.imgur.com/B2H8LR3.png\" alt=\"Bunka oasst2 Map\" width=\"35%\"/>\n</a>\n\n## Contact\n\n- Discord [Open Assistant Discord Server](https://ykilcher.com/open-assistant-discord)\n- GitHub: [LAION-AI/Open-Assistant](https://github.com/LAION-AI/Open-Assistant)\n- E-Mail: [open-assistant@laion.ai](mailto:open-assistant@laion.ai)\n",
+      "readme_sha256": "52bd472cf3cae04a4b21ecd5316f929741c47d991d4763b041c3a94de072dc31",
+      "license": "Apache-2.0",
+      "selection_policy": {
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "later_require_review_result": true,
+        "later_exclude_deleted": true,
+        "reconstruct_parent_child_links": true,
+        "split_unit": "message_tree_id",
+        "note": "128575 upstream training messages, not the same number of instruction-response pairs."
+      }
+    },
+    "smol_smoltalk": {
+      "repository": "HuggingFaceTB/smol-smoltalk",
+      "revision": "f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc",
+      "readme": "---\nlicense: apache-2.0\nlanguage:\n- en\ntags:\n- synthetic\npretty_name: Smol-SmolTalk\nsize_categories:\n- 100K<n<1M\ndataset_info:\n  features:\n  - name: messages\n    list:\n    - name: content\n      dtype: string\n    - name: role\n      dtype: string\n  - name: source\n    dtype: string\n  splits:\n  - name: train\n    num_bytes: 1811694118.6259818\n    num_examples: 460341\n  - name: test\n    num_bytes: 95354393.3740182\n    num_examples: 24229\n  download_size: 970652749\n  dataset_size: 1907048512.0\nconfigs:\n- config_name: default\n  data_files:\n  - split: train\n    path: data/train-*\n  - split: test\n    path: data/test-*\n---\n\n# Smol-SmalTalk\n\nThis is a subset of [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk/) dataset adapted for smol models with less than 1B parameters. We used it to build [SmolLM2-360M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct) and \n[SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/). We do SFT on this dataset and then DPO on UltraFeedback.\n\nCompared to SmolTalk: \n- The conversations from Smol-Magpie-Ultra are shorter in this dataset\n- We include less task specific data compared to SmolTalk (e.g no function calling and less rewriting and summarization examples) since these smaller models have limited capacity\n- We don't include any advanced math datasets\n\n```python\nfrom datasets import load_dataset\n\nds = load_dataset(\"HuggingFaceTB/smol-smoltalk\", split=\"train\")\n```\n\n## Citation\n```bash\n@misc{allal2025smollm2smolgoesbig,\n      title={SmolLM2: When Smol Goes Big -- Data-Centric Training of a Small Language Model}, \n      author={Loubna Ben Allal and Anton Lozhkov and Elie Bakouch and Gabriel Martín Blázquez and Guilherme Penedo and Lewis Tunstall and Andrés Marafioti and Hynek Kydlíček and Agustín Piqueres Lajarín and Vaibhav Srivastav and Joshua Lochner and Caleb Fahlgren and Xuan-Son Nguyen and Clémentine Fourrier and Ben Burtenshaw and Hugo Larcher and Haojun Zhao and Cyril Zakka and Mathieu Morlon and Colin Raffel and Leandro von Werra and Thomas Wolf},\n      year={2025},\n      eprint={2502.02737},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2502.02737}, \n}\n```",
+      "readme_sha256": "4de8fe5ebb738a835f780332c35ec5a7dd1e8dae058308e7caa176dca6bbf808",
+      "license": "Apache-2.0 for allowed newly generated families; imported families retain their original licenses",
+      "selection_policy": {
+        "source_allowlist": [
+          "smol-magpie-ultra-short",
+          "smollm-rewrite-30k",
+          "smol-summarize-20k",
+          "smol-contraints"
+        ],
+        "known_rejected_first_shard_row_indices": [
+          45700,
+          46632,
+          74945
+        ]
+      }
+    },
+    "alpaca_gpt4_zh": {
+      "repository": "Instruction-Tuning-with-GPT-4/GPT-4-LLM",
+      "revision": "80cda626ea305004be42426671c66efebbf22144",
+      "readme": "# Instruction Tuning with GPT-4\n\nBaolin Peng*, Chunyuan Li*, Pengcheng He*, Michel Galley, Jianfeng Gao (*Equal Contribution)\n\n[[Project Page](https://instruction-tuning-with-gpt-4.github.io/)] [[Paper](https://arxiv.org/abs/2304.03277)] \n<p align=\"center\">\n    <img src=\"https://instruction-tuning-with-gpt-4.github.io/images/gpt4llama_logo.png\" width=\"50%\"> <br>\n    Pronounced as \"GPT-4-LLM\" or \"GPT-for-LLM\", image is generated by <a href=\"https://gligen.github.io/\">GLIGEN</a>\n</p>\n\n\n\n[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)\n[![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/DATA_LICENSE)\n\n\n\nThis is the repo for the GPT-4-LLM, which aims to share data generated by GPT-4 for building an instruction-following LLMs with supervised learning and reinforcement learning. The repo contains:\n- English Instruction-Following [Data](#data-release) generated by GPT-4 using Alpaca prompts for fine-tuning LLMs.\n- Chinese Instruction-Following [Data](#data-release) generated by GPT-4 using Chinese prompts translated from Alpaca by ChatGPT.\n- Comparison [Data](#data-release) ranked by GPT-4 to train reward models.\n- Answers on Unnatural Instructions [Data](#data-release) from GPT-4 to quantify the gap between GPT-4 and instruction-tuned models at scale.\n\n\n**Usage and License Notices**: The data is intended and licensed for research use only. The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes.\n\n\n- [Overview](#overview)\n- [GPT-4 Data Release](#data-release)\n- [How Good is the Data?](#how-good-is-the-data)\n- [Fine-tuning with the Data](#fine-tuning-with-the-data)\n- [Reproduce Figure Plots](#collect-results-and-reproduce-figure-plots)\n\n## :fire: News\n<!---\n* **[2023.04.07]** Data restored.\n* **[2023.04.07]** :warning: We turn off the data downloading temporarily.\n-->\n* **[2023.04.17]** Visual instruction tuning with GPT-4 is released! Please check out the multimodal model LLaVA: [[Project Page](https://llava-vl.github.io/)] [[Paper](https://arxiv.org/abs/2304.08485)] [[Demo](https://llava.hliu.cc/)] [[Code]](https://github.com/haotian-liu/LLaVA)  [[Data](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K)] [[Model](https://huggingface.co/liuhaotian/LLaVA-13b-delta-v0)]\n* **[2023.04.15]** Updated comparision data, including three model responses and GPT-4 evaluation scores.\n* **[2023.04.06]** Paper and data are released.\n\n\n\n\n## Overview\nLarge Language Models (LLMs) have shown impressive generalization capabilities such as in-context-learning and chain-of-thoughts reasoning. To enable LLMs to follow natural language instructions and complete real-world tasks, researchers have been exploring methods of instruction-tuning of LLMs. To advance the state of the art of instruction-tuning for LLMs, we present the first attempt to use GPT-4 to generate instruction-following data for LLM finetuning. \n\n## Data Release\n\n* [`alpaca_gpt4_data.json`](./data/alpaca_gpt4_data.json) contains 52K instruction-following data generated by GPT-4 with prompts in Alpaca.\nThis JSON file has the same format as Alpaca data, except the output is generated by GPT-4:\n\n    - `instruction`: `str`, describes the task the model should perform. Each of the 52K instructions is unique.\n    - `input`: `str`, optional context or input for the task. \n    - `output`: `str`, the answer to the instruction as generated by `GPT-4`.\n\n\n* [`alpaca_gpt4_data_zh.json`](./data/alpaca_gpt4_data_zh.json) contains 52K instruction-following data generated by GPT-4 with Alpaca prompts translated into Chinese by ChatGPT. This JSON file has the same format.\n\n* [`comparison_data.json`](./data/comparison_data_v2.json) ranked responses from three models, including GPT-4, GPT-3.5 and OPT-IML by asking GPT-4 to rate the quality.\n\n    - `user_input`: `str`, prompts used for quering LLMs.\n    - `completion_a`: `str`, a model completion which is ranked higher than completion_b.\n    - `completion_b`: `str`, a different model completion which has a lower quality score. \n\n* [`unnatural_instruction_gpt4_data.json`](./data/unnatural_instruction_gpt4_data.json) contains 9K instruction-following data generated by GPT-4 with prompts in Unnatural Instruction. This JSON file has the same format as Alpaca data.\n\n## How Good is the Data\n\nHuman evaluation was performed on model generation results using Amazon Mechanical Turk following Helpfulness, Honestness and Harmlessness criteria by [Anthropic AI](https://arxiv.org/abs/2112.00861). The results are summarized as follows:\n- Two instruction-tuned LLaMA models were compared, fine-tuned on data generated by GPT-4 and GPT-3 respectively.\n- LLaMA-GPT-4 performs substantially better than LLaMA-GPT-3 in the \"Helpfulness\" criterion.\n- LLaMA-GPT-4 performs similarly to the original GPT-4 in all three criteria, suggesting a promising direction for developing state-of-the-art instruction-following LLMs.\n\n![LLaMA-GPT4 vs Alpaca (i.e., LLaMA-GPT3)](static/pie_llama_gpt3_vs_llam_gpt4.png )\n![LLaMA-GPT4 vs GPT-4](static/pie_llama_gpt4_vs_gpt4.png )\n\n## Fine-tuning with the data\nWe follow the same reciple to fine-tune LLaMA as Alpaca using standard Hugging Face training code.\n\nTo reproduce our results with LLaMA 7B, first setup Alpaca repo and run the following CMDs:\n```bash\n## cmd we used to train LLaMA on 16*V100\ntorchrun --nproc_per_node=16 \n--master_port=12345 train.py \n--model_name_or_path PATH/TO/LLaMA\n--data_path ./data/alpaca_gpt4_data.json \n--output_dir PATH/TO/SAVE\n--num_train_epochs 3 \n--per_device_train_batch_size 1 \n--per_device_eval_batch_size 1 \n--gradient_accumulation_steps 4 \n--evaluation_strategy \"no\" \n--save_strategy \"steps\" \n--save_steps 200 \n--save_total_limit 1 \n--learning_rate 2e-5 \n--weight_decay 0. \n--warmup_ratio 0.03 \n--lr_scheduler_type \"cosine\" \n--logging_steps 1 \n--deepspeed configs/ds_config.json\n```\nTo evaluate the results, we highly recommend users refer to [Vicuna](https://vicuna.lmsys.org/) as they have provided awesome serving scripts and evaluation piplelines.\n\n\n## Collect results and reproduce figure plots\n\nThe results can be plotted using the included IPython notebook plots/main_plots.ipynb. Start the IPython Notebook server:\n\n```\n$ cd plots\n$ ipython notebook\n```\n\nSelect the [`main_plots.ipynb`](./plots/main_plots.ipynb) notebook and execute the included code. Note that without modification, we have copyed our extracted results into the notebook, and script will output figures in the paper. Some related data for plots have been provided in [data](./plots/data), the generated plots are saved in [plots/output](./plots/output) If you've run your own training and wish to plot results, you'll have to organize your results in the same format instead. \n\n*Shortcut: to skip all the work and just see the results, take a look at this notebook with [cached plots](./plots/main_plots.ipynb).*\n\n## Citation\n```\n@article{peng2023instruction,\n  title={Instruction Tuning with GPT-4},\n  author={Peng, Baolin and Li, Chunyuan and He, Pengcheng and Galley, Michel and Gao, Jianfeng},\n  journal={arXiv preprint arXiv:2304.03277},\n  year={2023}\n}\n```\n\n## Related Projects\n\n- [LLaVA: Visual Instruction Tuning with GPT-4](https://llava-vl.github.io/)\n- [LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day](https://github.com/microsoft/LLaVA-Med)\n- [Otter: A Multi-Modal Model with In-Context Instruction Tuning](https://github.com/Luodian/Otter)\n\n## Acknowledgement\nThis repo benefits from [LLaMA](https://github.com/facebookresearch/llama), [Alpaca](https://github.com/tatsu-lab/stanford_alpaca), and [Vicuna](https://github.com/lm-sys/FastChat). Thanks for their wonderful works.\n\n\n",
+      "readme_sha256": "fa85b731cff835451bcab6f6bac70143e6ecf97e6774ba8c4e4cb7dc707841e2",
+      "data_license": "Attribution-NonCommercial 4.0 International\n\n=======================================================================\n\nCreative Commons Corporation (\"Creative Commons\") is not a law firm and\ndoes not provide legal services or legal advice. Distribution of\nCreative Commons public licenses does not create a lawyer-client or\nother relationship. Creative Commons makes its licenses and related\ninformation available on an \"as-is\" basis. Creative Commons gives no\nwarranties regarding its licenses, any material licensed under their\nterms and conditions, or any related information. Creative Commons\ndisclaims all liability for damages resulting from their use to the\nfullest extent possible.\n\nUsing Creative Commons Public Licenses\n\nCreative Commons public licenses provide a standard set of terms and\nconditions that creators and other rights holders may use to share\noriginal works of authorship and other material subject to copyright\nand certain other rights specified in the public license below. The\nfollowing considerations are for informational purposes only, are not\nexhaustive, and do not form part of our licenses.\n\n     Considerations for licensors: Our public licenses are\n     intended for use by those authorized to give the public\n     permission to use material in ways otherwise restricted by\n     copyright and certain other rights. Our licenses are\n     irrevocable. Licensors should read and understand the terms\n     and conditions of the license they choose before applying it.\n     Licensors should also secure all rights necessary before\n     applying our licenses so that the public can reuse the\n     material as expected. Licensors should clearly mark any\n     material not subject to the license. This includes other CC-\n     licensed material, or material used under an exception or\n     limitation to copyright. More considerations for licensors:\n    wiki.creativecommons.org/Considerations_for_licensors\n\n     Considerations for the public: By using one of our public\n     licenses, a licensor grants the public permission to use the\n     licensed material under specified terms and conditions. If\n     the licensor's permission is not necessary for any reason--for\n     example, because of any applicable exception or limitation to\n     copyright--then that use is not regulated by the license. Our\n     licenses grant only permissions under copyright and certain\n     other rights that a licensor has authority to grant. Use of\n     the licensed material may still be restricted for other\n     reasons, including because others have copyright or other\n     rights in the material. A licensor may make special requests,\n     such as asking that all changes be marked or described.\n     Although not required by our licenses, you are encouraged to\n     respect those requests where reasonable. More considerations\n     for the public:\n    wiki.creativecommons.org/Considerations_for_licensees\n\n=======================================================================\n\nCreative Commons Attribution-NonCommercial 4.0 International Public\nLicense\n\nBy exercising the Licensed Rights (defined below), You accept and agree\nto be bound by the terms and conditions of this Creative Commons\nAttribution-NonCommercial 4.0 International Public License (\"Public\nLicense\"). To the extent this Public License may be interpreted as a\ncontract, You are granted the Licensed Rights in consideration of Your\nacceptance of these terms and conditions, and the Licensor grants You\nsuch rights in consideration of benefits the Licensor receives from\nmaking the Licensed Material available under these terms and\nconditions.\n\n\nSection 1 -- Definitions.\n\n  a. Adapted Material means material subject to Copyright and Similar\n     Rights that is derived from or based upon the Licensed Material\n     and in which the Licensed Material is translated, altered,\n     arranged, transformed, or otherwise modified in a manner requiring\n     permission under the Copyright and Similar Rights held by the\n     Licensor. For purposes of this Public License, where the Licensed\n     Material is a musical work, performance, or sound recording,\n     Adapted Material is always produced where the Licensed Material is\n     synched in timed relation with a moving image.\n\n  b. Adapter's License means the license You apply to Your Copyright\n     and Similar Rights in Your contributions to Adapted Material in\n     accordance with the terms and conditions of this Public License.\n\n  c. Copyright and Similar Rights means copyright and/or similar rights\n     closely related to copyright including, without limitation,\n     performance, broadcast, sound recording, and Sui Generis Database\n     Rights, without regard to how the rights are labeled or\n     categorized. For purposes of this Public License, the rights\n     specified in Section 2(b)(1)-(2) are not Copyright and Similar\n     Rights.\n  d. Effective Technological Measures means those measures that, in the\n     absence of proper authority, may not be circumvented under laws\n     fulfilling obligations under Article 11 of the WIPO Copyright\n     Treaty adopted on December 20, 1996, and/or similar international\n     agreements.\n\n  e. Exceptions and Limitations means fair use, fair dealing, and/or\n     any other exception or limitation to Copyright and Similar Rights\n     that applies to Your use of the Licensed Material.\n\n  f. Licensed Material means the artistic or literary work, database,\n     or other material to which the Licensor applied this Public\n     License.\n\n  g. Licensed Rights means the rights granted to You subject to the\n     terms and conditions of this Public License, which are limited to\n     all Copyright and Similar Rights that apply to Your use of the\n     Licensed Material and that the Licensor has authority to license.\n\n  h. Licensor means the individual(s) or entity(ies) granting rights\n     under this Public License.\n\n  i. NonCommercial means not primarily intended for or directed towards\n     commercial advantage or monetary compensation. For purposes of\n     this Public License, the exchange of the Licensed Material for\n     other material subject to Copyright and Similar Rights by digital\n     file-sharing or similar means is NonCommercial provided there is\n     no payment of monetary compensation in connection with the\n     exchange.\n\n  j. Share means to provide material to the public by any means or\n     process that requires permission under the Licensed Rights, such\n     as reproduction, public display, public performance, distribution,\n     dissemination, communication, or importation, and to make material\n     available to the public including in ways that members of the\n     public may access the material from a place and at a time\n     individually chosen by them.\n\n  k. Sui Generis Database Rights means rights other than copyright\n     resulting from Directive 96/9/EC of the European Parliament and of\n     the Council of 11 March 1996 on the legal protection of databases,\n     as amended and/or succeeded, as well as other essentially\n     equivalent rights anywhere in the world.\n\n  l. You means the individual or entity exercising the Licensed Rights\n     under this Public License. Your has a corresponding meaning.\n\n\nSection 2 -- Scope.\n\n  a. License grant.\n\n       1. Subject to the terms and conditions of this Public License,\n          the Licensor hereby grants You a worldwide, royalty-free,\n          non-sublicensable, non-exclusive, irrevocable license to\n          exercise the Licensed Rights in the Licensed Material to:\n\n            a. reproduce and Share the Licensed Material, in whole or\n               in part, for NonCommercial purposes only; and\n\n            b. produce, reproduce, and Share Adapted Material for\n               NonCommercial purposes only.\n\n       2. Exceptions and Limitations. For the avoidance of doubt, where\n          Exceptions and Limitations apply to Your use, this Public\n          License does not apply, and You do not need to comply with\n          its terms and conditions.\n\n       3. Term. The term of this Public License is specified in Section\n          6(a).\n\n       4. Media and formats; technical modifications allowed. The\n          Licensor authorizes You to exercise the Licensed Rights in\n          all media and formats whether now known or hereafter created,\n          and to make technical modifications necessary to do so. The\n          Licensor waives and/or agrees not to assert any right or\n          authority to forbid You from making technical modifications\n          necessary to exercise the Licensed Rights, including\n          technical modifications necessary to circumvent Effective\n          Technological Measures. For purposes of this Public License,\n          simply making modifications authorized by this Section 2(a)\n          (4) never produces Adapted Material.\n\n       5. Downstream recipients.\n\n            a. Offer from the Licensor -- Licensed Material. Every\n               recipient of the Licensed Material automatically\n               receives an offer from the Licensor to exercise the\n               Licensed Rights under the terms and conditions of this\n               Public License.\n\n            b. No downstream restrictions. You may not offer or impose\n               any additional or different terms or conditions on, or\n               apply any Effective Technological Measures to, the\n               Licensed Material if doing so restricts exercise of the\n               Licensed Rights by any recipient of the Licensed\n               Material.\n\n       6. No endorsement. Nothing in this Public License constitutes or\n          may be construed as permission to assert or imply that You\n          are, or that Your use of the Licensed Material is, connected\n          with, or sponsored, endorsed, or granted official status by,\n          the Licensor or others designated to receive attribution as\n          provided in Section 3(a)(1)(A)(i).\n\n  b. Other rights.\n\n       1. Moral rights, such as the right of integrity, are not\n          licensed under this Public License, nor are publicity,\n          privacy, and/or other similar personality rights; however, to\n          the extent possible, the Licensor waives and/or agrees not to\n          assert any such rights held by the Licensor to the limited\n          extent necessary to allow You to exercise the Licensed\n          Rights, but not otherwise.\n\n       2. Patent and trademark rights are not licensed under this\n          Public License.\n\n       3. To the extent possible, the Licensor waives any right to\n          collect royalties from You for the exercise of the Licensed\n          Rights, whether directly or through a collecting society\n          under any voluntary or waivable statutory or compulsory\n          licensing scheme. In all other cases the Licensor expressly\n          reserves any right to collect such royalties, including when\n          the Licensed Material is used other than for NonCommercial\n          purposes.\n\n\nSection 3 -- License Conditions.\n\nYour exercise of the Licensed Rights is expressly made subject to the\nfollowing conditions.\n\n  a. Attribution.\n\n       1. If You Share the Licensed Material (including in modified\n          form), You must:\n\n            a. retain the following if it is supplied by the Licensor\n               with the Licensed Material:\n\n                 i. identification of the creator(s) of the Licensed\n                    Material and any others designated to receive\n                    attribution, in any reasonable manner requested by\n                    the Licensor (including by pseudonym if\n                    designated);\n\n                ii. a copyright notice;\n\n               iii. a notice that refers to this Public License;\n\n                iv. a notice that refers to the disclaimer of\n                    warranties;\n\n                 v. a URI or hyperlink to the Licensed Material to the\n                    extent reasonably practicable;\n\n            b. indicate if You modified the Licensed Material and\n               retain an indication of any previous modifications; and\n\n            c. indicate the Licensed Material is licensed under this\n               Public License, and include the text of, or the URI or\n               hyperlink to, this Public License.\n\n       2. You may satisfy the conditions in Section 3(a)(1) in any\n          reasonable manner based on the medium, means, and context in\n          which You Share the Licensed Material. For example, it may be\n          reasonable to satisfy the conditions by providing a URI or\n          hyperlink to a resource that includes the required\n          information.\n\n       3. If requested by the Licensor, You must remove any of the\n          information required by Section 3(a)(1)(A) to the extent\n          reasonably practicable.\n\n       4. If You Share Adapted Material You produce, the Adapter's\n          License You apply must not prevent recipients of the Adapted\n          Material from complying with this Public License.\n\n\nSection 4 -- Sui Generis Database Rights.\n\nWhere the Licensed Rights include Sui Generis Database Rights that\napply to Your use of the Licensed Material:\n\n  a. for the avoidance of doubt, Section 2(a)(1) grants You the right\n     to extract, reuse, reproduce, and Share all or a substantial\n     portion of the contents of the database for NonCommercial purposes\n     only;\n\n  b. if You include all or a substantial portion of the database\n     contents in a database in which You have Sui Generis Database\n     Rights, then the database in which You have Sui Generis Database\n     Rights (but not its individual contents) is Adapted Material; and\n\n  c. You must comply with the conditions in Section 3(a) if You Share\n     all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not\nreplace Your obligations under this Public License where the Licensed\nRights include other Copyright and Similar Rights.\n\n\nSection 5 -- Disclaimer of Warranties and Limitation of Liability.\n\n  a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE\n     EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS\n     AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF\n     ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,\n     IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,\n     WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR\n     PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,\n     ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT\n     KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT\n     ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\n\n  b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE\n     TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION,\n     NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,\n     INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,\n     COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR\n     USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN\n     ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR\n     DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR\n     IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\n\n  c. The disclaimer of warranties and limitation of liability provided\n     above shall be interpreted in a manner that, to the extent\n     possible, most closely approximates an absolute disclaimer and\n     waiver of all liability.\n\n\nSection 6 -- Term and Termination.\n\n  a. This Public License applies for the term of the Copyright and\n     Similar Rights licensed here. However, if You fail to comply with\n     this Public License, then Your rights under this Public License\n     terminate automatically.\n\n  b. Where Your right to use the Licensed Material has terminated under\n     Section 6(a), it reinstates:\n\n       1. automatically as of the date the violation is cured, provided\n          it is cured within 30 days of Your discovery of the\n          violation; or\n\n       2. upon express reinstatement by the Licensor.\n\n     For the avoidance of doubt, this Section 6(b) does not affect any\n     right the Licensor may have to seek remedies for Your violations\n     of this Public License.\n\n  c. For the avoidance of doubt, the Licensor may also offer the\n     Licensed Material under separate terms or conditions or stop\n     distributing the Licensed Material at any time; however, doing so\n     will not terminate this Public License.\n\n  d. Sections 1, 5, 6, 7, and 8 survive termination of this Public\n     License.\n\n\nSection 7 -- Other Terms and Conditions.\n\n  a. The Licensor shall not be bound by any additional or different\n     terms or conditions communicated by You unless expressly agreed.\n\n  b. Any arrangements, understandings, or agreements regarding the\n     Licensed Material not stated herein are separate from and\n     independent of the terms and conditions of this Public License.\n\n\nSection 8 -- Interpretation.\n\n  a. For the avoidance of doubt, this Public License does not, and\n     shall not be interpreted to, reduce, limit, restrict, or impose\n     conditions on any use of the Licensed Material that could lawfully\n     be made without permission under this Public License.\n\n  b. To the extent possible, if any provision of this Public License is\n     deemed unenforceable, it shall be automatically reformed to the\n     minimum extent necessary to make it enforceable. If the provision\n     cannot be reformed, it shall be severed from this Public License\n     without affecting the enforceability of the remaining terms and\n     conditions.\n\n  c. No term or condition of this Public License will be waived and no\n     failure to comply consented to unless expressly agreed to by the\n     Licensor.\n\n  d. Nothing in this Public License constitutes or may be interpreted\n     as a limitation upon, or waiver of, any privileges and immunities\n     that apply to the Licensor or You, including from the legal\n     processes of any jurisdiction or authority.\n\n=======================================================================\n\nCreative Commons is not a party to its public\nlicenses. Notwithstanding, Creative Commons may elect to apply one of\nits public licenses to material it publishes and in those instances\nwill be considered the “Licensor.” The text of the Creative Commons\npublic licenses is dedicated to the public domain under the CC0 Public\nDomain Dedication. Except for the limited purpose of indicating that\nmaterial is shared under a Creative Commons public license or as\notherwise permitted by the Creative Commons policies published at\ncreativecommons.org/policies, Creative Commons does not authorize the\nuse of the trademark \"Creative Commons\" or any other trademark or logo\nof Creative Commons without its prior written consent including,\nwithout limitation, in connection with any unauthorized modifications\nto any of its public licenses or any other arrangements,\nunderstandings, or agreements concerning use of licensed material. For\nthe avoidance of doubt, this paragraph does not form part of the\npublic licenses.\n\nCreative Commons may be contacted at creativecommons.org.",
+      "data_license_sha256": "db2e35513dbadcdc67f5819a3bfee2777786538dd3531620cd5fbd4b6ed6e538",
+      "license": "CC-BY-NC-4.0",
+      "notice": "Original publisher restricts data to research use; copied from pinned prior source audit."
+    }
+  },
+  "total_planned_bytes": 1346228580,
+  "training_ready": false,
+  "future_release_requirements": [
+    "Chinese converted with official OpenCC to simplified Chinese before deduplication and tokenization",
+    "Task and answer checks, language checks, no answer truncation, current 32K BPE and EOS completion mask",
+    "Remove overlap with existing SFT train/validation/test and pretrain holdouts; group by source and context/tree",
+    "No public test or validation files downloaded into candidate training pool",
+    "Balanced Chinese-English supervised tokens, not raw example counts",
+    "Stratified content review and independent acceptance before publishing a new training manifest"
+  ],
+  "not_selected": [
+    {
+      "repository": "Magpie-Align/Magpie-Qwen2-Pro-200K-Chinese",
+      "reason": "No explicit dataset license in current original card"
+    },
+    {
+      "repository": "m-a-p/COIG-CQIA",
+      "reason": "Original card still states license information needed"
+    },
+    {
+      "repository": "BAAI/Infinity-Instruct",
+      "reason": "Current official repository requires gated access acceptance"
+    }
+  ]
+}

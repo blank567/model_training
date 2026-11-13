@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "project_root": "../..",
+  "parent_dataset": "artifacts/posttrain/sft_300m_20261026_164414",
+  "parent_data_identity": "eeca4ad1026115bb933125d752b08dfe7c5a6ae4839bd72ae8f2f74be0a38b5e",
+  "output_dir": "artifacts/posttrain/sft_300m_20261026_170531",
+  "reviewed_examples": [
+    {
+      "id": "f8c7d48b9188ee505bfbc20ad534ff976b24f1761ff75c5e3eba190960affa81",
+      "split": "train",
+      "dataset": "dolly",
+      "row_index": 647,
+      "task": "classification"
+    },
+    {
+      "id": "0362b787b530d0817565c45860adf9dd010313d83da104698d184cc99fc74a6b",
+      "split": "train",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 14044,
+      "task": "classification"
+    },
+    {
+      "id": "01eddfe8619203385296e34ddc545fcb2fa6380ad3dc92e243e0e5a6a2dae768",
+      "split": "train",
+      "dataset": "dolly",
+      "row_index": 11728,
+      "task": "extraction"
+    },
+    {
+      "id": "012d514a827a265161070e672a78cda60d27a2c60758f8c1db83f5b33e434c37",
+      "split": "train",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 82823,
+      "task": "extraction"
+    },
+    {
+      "id": "125757cca75a5912c265fa665e421031f0acf4a12d536a41eb49d373e6b2667f",
+      "split": "train",
+      "dataset": "dolly",
+      "row_index": 10560,
+      "task": "format_following"
+    },
+    {
+      "id": "037c817b250bdbc62f71daa2dcbc0c0e35b46606f4cbd125585842a12b4ba75f",
+      "split": "train",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 50728,
+      "task": "format_following"
+    },
+    {
+      "id": "001cc06c9e81f3a72a7d86e10e4a11e683d5d2503dd45183e3f24843f5feb0a9",
+      "split": "train",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 12977,
+      "task": "rewriting"
+    },
+    {
+      "id": "00558d30687ecd9f89cdf504efc615193feb594dc0e0327640d62350a6547002",
+      "split": "train",
+      "dataset": "dolly",
+      "row_index": 5613,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "02391551fca8958c499dfcac4ed5acb20b1281be5d66177fd69a197136a09bc8",
+      "split": "validation",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 25610,
+      "task": "extraction"
+    },
+    {
+      "id": "c7516dcf44ca07da2c910fad894ad030cb50cd5c6ee23032b65f330ebc2803e1",
+      "split": "validation",
+      "dataset": "dolly",
+      "row_index": 14021,
+      "task": "format_following"
+    },
+    {
+      "id": "1145b07d0fcf378f6ed397166add0dadcdb4eb0eba6fb93706ff07feedf00bf3",
+      "split": "validation",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 111118,
+      "task": "format_following"
+    },
+    {
+      "id": "31286c020c0787fc9586a11f436622454da3fed62ff40f8d4ab10f32191969d6",
+      "split": "validation",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 64769,
+      "task": "rewriting"
+    },
+    {
+      "id": "11ddb87462d38ec3b9a8fd58020a717b4555852c381d80927b70cd91f5c99149",
+      "split": "validation",
+      "dataset": "dolly",
+      "row_index": 4613,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "55e77125198e0ad5b240dd3dd8ff32e5948657f304f9f1df0a6526fdbbf6135b",
+      "split": "validation",
+      "dataset": "dolly",
+      "row_index": 11373,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "b23307dc21b6270b5f87e6e5c8661dfa1c85453285104a983ce2cf9a5098abef",
+      "split": "validation",
+      "dataset": "dolly",
+      "row_index": 8471,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "0070894170151b22f7a218f0f335891a8fd1f4496a4a8ecb12d13585e6e558d5",
+      "split": "validation",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 31901,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "00ef8bf20e71d9c6dad91ed2398d9dae1877e14636a26e34c73a5908f4f71a8a",
+      "split": "train",
+      "dataset": "dolly",
+      "row_index": 3459,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "02094c451abbfeae66ce9236adb424308804a6fa9dd86114803be49c89d71cad",
+      "split": "train",
+      "dataset": "dolly",
+      "row_index": 13147,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "0007756ab3ecefe90814e46c54650521b416eef932c7cdfff8cf95507c688081",
+      "split": "train",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 22099,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "000fb8db9a037cc0a840578f289a60568dd7a4e75854880676bb8620fa5ac544",
+      "split": "train",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 13925,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "0024645e826fa31423bd7a42e5de9ff1e33511d543f6ef6a93b5c97f7c3089a2",
+      "split": "train",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 34323,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "129bac5c4174db8f1ec03e03c62986618df3f6d90fa5016a157134a7094b267c",
+      "split": "train",
+      "dataset": "dolly",
+      "row_index": 8705,
+      "task": "summarization"
+    },
+    {
+      "id": "0048c04d8aeadfdda04baff1ea640994079c804062c8a188542e35df72265462",
+      "split": "train",
+      "dataset": "smol_smoltalk_0",
+      "row_index": 29253,
+      "task": "summarization"
+    },
+    {
+      "id": "0c576eb3c73560cd7879dc1119308f1737cc86d2787e2f4d29f368fb1f4f804d",
+      "split": "validation",
+      "dataset": "dolly",
+      "row_index": 3550,
+      "task": "extraction"
+    },
+    {
+      "id": "00874fb4e4311651bce749d02fcbcf5d9169505224a648708d2e9e628f12be90",
+      "split": "train",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 22303,
+      "task": "classification"
+    },
+    {
+      "id": "002692642e1b69606a4ef14dc5d655a6347dfd703ca39eb64fe6bb8630b8836a",
+      "split": "train",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 16618,
+      "task": "extraction"
+    },
+    {
+      "id": "015a9c651678a7589af71fcd96c8e7c1f307baa30ad06ef824b86319f70f0b17",
+      "split": "train",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 20190,
+      "task": "format_following"
+    },
+    {
+      "id": "0037ee8e026ccacb820c976a379424b9a39dae6a017cd4d46c5cf2604ffde0e6",
+      "split": "train",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 25455,
+      "task": "rewriting"
+    },
+    {
+      "id": "00013b5cf45a6ac1eaf44e5057305af2d3ffbe9a2b3b3c667daf4bc0df0e544c",
+      "split": "train",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 35440,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "000a9c21a14ecd5d31f8b4d79330827cb0084826a94d42e58c13d0cec3931b1a",
+      "split": "train",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 12932,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "00166e2fe26063224dcefe2983818e431abd909dd26ef6c79ccccce07b11b22e",
+      "split": "train",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 5804,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "015b552b1e48a4742ac64e2e3992ca1f08777e58cb5d5058ff1e64ec9be53567",
+      "split": "train",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 47371,
+      "task": "summarization"
+    },
+    {
+      "id": "0a1d58a30316be258e3d002dd62af35d2c7f878cdd47c90999f811e42a087863",
+      "split": "validation",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 40736,
+      "task": "classification"
+    },
+    {
+      "id": "1427b23af0fdd65c45fa156ef9a8c6e3675501cea4043e71ef07e0df3ff4d030",
+      "split": "validation",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 16481,
+      "task": "extraction"
+    },
+    {
+      "id": "b536a6304c6ba487252fe73f8a24768ff744aab1707a42e5d43c491313f29bbc",
+      "split": "validation",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 30138,
+      "task": "format_following"
+    },
+    {
+      "id": "19f9eff521d870fb1b79a2002f586e3d9da2274ee72cb01d6cad0c58825a0035",
+      "split": "validation",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 5226,
+      "task": "rewriting"
+    },
+    {
+      "id": "007503b80e0afc62e24aba0480f02c7bd4312ab0341b1378395eb2a55452e9e7",
+      "split": "validation",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 44839,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "00fd2cced40cb596fe182315240f91c9b8d8a9baa8dc953409eb5ef59c3bab96",
+      "split": "validation",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 23686,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "018fd1adc014e84584846309c73dfc327080de53e6e7d002d0972c83ae2cdbc9",
+      "split": "validation",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 40618,
+      "task": "short_qa_or_other"
+    },
+    {
+      "id": "057152109b0cdfd69ff82794126c4f2663c47cc1413d2657cff12a746e94cf63",
+      "split": "validation",
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 26026,
+      "task": "summarization"
+    }
+  ],
+  "exclusions": [
+    {
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 16618,
+      "reason": "Boundary of the numeric interval is ambiguous for a unique reference answer."
+    },
+    {
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 47371,
+      "reason": "Algorithm-specific claims require domain verification before being used as a reference."
+    },
+    {
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 40736,
+      "reason": "Fruit description admits multiple answers and does not justify a unique classification."
+    },
+    {
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 40618,
+      "reason": "Specific venue and mountain names need location verification."
+    },
+    {
+      "dataset": "alpaca_gpt4_zh",
+      "row_index": 26026,
+      "reason": "Scientific causal assertion in the supplied text needs subject-matter verification."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 647,
+      "reason": "Answer reduces multiple stated leaf-shape possibilities to a single universal shape."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 11728,
+      "reason": "Answer introduces game details not supported by the provided passage."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 3459,
+      "reason": "Answer adds an unsupported comparative claim about glutinous rice."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 13147,
+      "reason": "Question asks for a count but the reference only lists names."
+    },
+    {
+      "dataset": "smol_smoltalk_0",
+      "row_index": 34323,
+      "reason": "Named logical fallacy requires verification; not suitable as an unchecked reference."
+    },
+    {
+      "dataset": "smol_smoltalk_0",
+      "row_index": 22099,
+      "reason": "Statistical analysis advice is outside this first short-task curriculum."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 8705,
+      "reason": "Cryptographic inputs description requires expert verification beyond the supplied passage."
+    },
+    {
+      "dataset": "dolly",
+      "row_index": 14021,
+      "reason": "Reference conflates spelling variants with alternate beverage names."
+    },
+    {
+      "dataset": "smol_smoltalk_0",
+      "row_index": 31901,
+      "reason": "Role-play advertises a fictional real-world service without clearly marking the unsupported itinerary."
+    }
+  ]
+}

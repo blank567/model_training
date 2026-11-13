@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "stage": "sft",
+  "method": "full",
+  "project_root": "../..",
+  "base_checkpoint": "runs/sft_300m_full_lr5e-5_mb8_ga4_b32_ep3_stop2_wu0p03_wd0p01_seed42_20261028_172855/best.pt",
+  "data_manifest": "artifacts/posttrain/math_public_20261101_v2/manifest.json",
+  "output_dir": "runs/math_sft_pending_prepare",
+  "train_split": "train",
+  "fixture": false,
+  "min_free_bytes": 8589934592,
+  "train": {
+    "device": "cuda",
+    "dtype": "bf16",
+    "seed": 42,
+    "epochs": 1,
+    "stop_epochs": null,
+    "learning_rate": 0.00005,
+    "micro_batch_size": 8,
+    "gradient_accumulation_steps": 4,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "activation_checkpointing": false,
+    "retention_eval_batches": 0,
+    "eval_interval": 100,
+    "save_interval": 100,
+    "log_interval": 10,
+    "tensorboard": true,
+    "wandb": true,
+    "wandb_mode": "online"
+  },
+  "budget": {
+    "hourly_rate_cny": 3.03,
+    "run_limit_cny": 6,
+    "project_limit_cny": 500,
+    "reserve_cny": 100,
+    "max_runtime_seconds": 7200,
+    "ledger_path": "runs/budget_ledger.json"
+  },
+  "experiment": {
+    "purpose": "One-epoch broad public-math Full-SFT starting from the completed selected Full-SFT checkpoint",
+    "initial_checkpoint_sha256": "4a36a0862c9d0527a7ec3737c7bc9ed5c107a667d4c3378b0e14d120241c6060",
+    "next_algorithms": ["DPO", "PPO+RLVR", "GRPO+RLVR"],
+    "next_algorithms_share_same_selected_math_sft": true,
+    "rl_launch_requires_updated_verifier_and_development_reward_signal": true,
+    "test_used_for_selection": false
+  }
+}

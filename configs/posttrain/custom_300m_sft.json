@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "stage": "sft",
+  "method": "full",
+  "project_root": "../..",
+  "base_checkpoint": "runs/pretrain_300m_3b_20261025_150858/best.pt",
+  "base_checkpoint_sha256": "69b24779315561390bddbef18ce5ce9b505052a3ca697a0a651dfa6ea3c2bf45",
+  "data_manifest": "artifacts/posttrain/sft_300m_20261026_170531/manifest.json",
+  "output_dir": "runs/sft_300m_full_unprepared",
+  "train_split": "train",
+  "min_free_bytes": 8589934592,
+  "fixture": false,
+  "experiment": {"phase": "learning_rate_screen", "note": "从同一Base开始；先逐个比较学习率，不运行笛卡尔积。"},
+  "train": {
+    "device": "cuda", "dtype": "bf16", "seed": 42, "deterministic": true,
+    "micro_batch_size": 8, "gradient_accumulation_steps": 4,
+    "epochs": 1.0, "stop_epochs": null,
+    "learning_rate": 0.00002, "warmup_ratio": 0.03, "min_lr_ratio": 0.1,
+    "weight_decay": 0.01, "max_grad_norm": 1.0, "betas": [0.9, 0.95],
+    "eval_interval": 100, "save_interval": 100, "log_interval": 10,
+    "activation_checkpointing": false, "eval_micro_batch_size": 8,
+    "retention_eval_batches": 2, "retention_eval_seq_len": 512,
+    "tensorboard": true, "wandb": true, "wandb_project": "bilingual-training-lab",
+    "wandb_entity": null, "wandb_mode": "online", "wandb_run_name": null
+  },
+  "budget": {
+    "hourly_rate_cny": 3.03, "run_limit_cny": 15,
+    "project_limit_cny": 500, "reserve_cny": 100,
+    "max_runtime_seconds": 7200, "ledger_path": "runs/budget_ledger.json"
+  }
+}

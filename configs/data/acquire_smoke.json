@@ -1,0 +1,8 @@
+{
+  "project_root": "../..",
+  "output_dir": "examples/_outputs/acquired",
+  "overwrite": true,
+  "max_docs": 100,
+  "max_bytes": 200000,
+  "sources": [{"type": "local_jsonl", "path": "examples/pretrain_documents.jsonl"}]
+}
