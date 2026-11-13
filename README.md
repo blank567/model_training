@@ -1,4 +1,4 @@
-# 中英大模型训练实验室
+# 大模型训练实验室
 
 **单卡完成从随机初始化预训练，到 SFT、LoRA、DPO、PPO 和 GRPO 的可追溯实验。** 主线是自研 **303M Dense Decoder-only Transformer**；本地 Windows 开发和 CPU 验证，远程 Linux / NVIDIA vGPU 48 GB 训练。
 
@@ -271,5 +271,3 @@ CPU fixture 不证明 GPU 数值与吞吐；单 seed 不证明跨种子显著性
 预训练来源含 Wikipedia、FineWeb-2 / FineWeb-Edu，通用 SFT 和阅读数据来源、固定版本、筛选与许可统一见[数据指南](docs/data-guide.md)。存在署名、共享、非商业等不同许可，**混合数据不能统一视为可商用**。代码依赖、原始数据和模型分发需分别核对；本次未擅自指定覆盖全仓的开源许可证。
 
 `.gitignore` 排除了运行产物、凭据、机器配置和个人面试交付包。连接模板见 [sync_autodl.example.json](configs/deployment/sync_autodl.example.json)、[wandb_network.example.json](configs/remote/wandb_network.example.json)。部署打包脚本不遵循 Git 发布筛选，不可直接将本地部署包公开；`.gitattributes` 保留冻结源码与结果文件原始字节，避免换行转换破坏 SHA 身份。
-
-`docs/` 仅保留 5 份核心文档及 `results/`。历史计划、操作流水、教学和面试资料已转入 Git 忽略的 `artifacts/document_archive/`，并保留逐文件校验与旧新路径映射；公开历史版本也可从 Git 提交记录查阅。
