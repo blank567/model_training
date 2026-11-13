@@ -268,7 +268,7 @@ last仅作预先声明的终点诊断，不在看过最终测试后用41.20%替�
 | [cross_domain_instruction_loss.csv](results/cross_domain_instruction_loss.csv) | 阅读SFT与RL best在通用1,000题上的CE保持检查 |
 | [provenance.json](results/provenance.json) | 来源相对路径、源文件与发布文件SHA256、图表逐文件校验 |
 
-原始证据在未提交Git的本地目录`runs/assistant/inference/posttrain_comprehensive_20261104_v3/`：`report/完整测试报告.md`、`report/tables/`、`report/report_manifest.json`、`sources_local/training/`和`results_local/`。预训练数据容量另见[data-3b.md](data-3b.md)，LoRA协议见[lora-rank-dropout-20261101.md](lora-rank-dropout-20261101.md)，九组RL协议见[reading-rl-comparison-20261102.md](reading-rl-comparison-20261102.md)。这些较早文档保留当时状态，完成结果以本页和Nov4冻结结果为准。
+原始证据在未提交Git的本地目录`runs/assistant/inference/posttrain_comprehensive_20261104_v3/`：`report/完整测试报告.md`、`report/tables/`、`report/report_manifest.json`、`sources_local/training/`和`results_local/`。预训练容量、SFT与阅读/RL数据协议统一见[数据指南](data-guide.md)，启动和恢复约束见[运行手册](remote-runbook.md)。历史逐日记录已转入本地归档，也可从Git历史查阅；完成结果以本页和Nov4冻结结果为准。
 
 发布仓库未包含训练语料、Tokenizer产物和权重，因此仅克隆不能直接复现已训练分数；需按数据来源许可重建语料并取得对应Base/Tokenizer和冻结身份。运行源码、准备与审计逻辑、CPU测试和汇总证据均可检查。未另行声明的数据许可不因代码仓库发布而变化。
 

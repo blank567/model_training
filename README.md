@@ -43,7 +43,7 @@
 | 16 × 2 | 关闭 | 27,371 | 33.82 / 35.56 GiB |
 | 16 × 2 | 开启 | 21,351 | 12.25 / 14.74 GiB |
 
-因此选择 8×4；显存占用更高并不意味着更快。这是短窗口测速，不是质量对照或通用硬件结论。预训练随机有放回采样，处理 3B Token 不等于无重复覆盖 3B 独立 Token。详见 [3B 数据](docs/data-3b.md)和[测速记录](docs/run-300m-optimized.md)。
+因此选择 8×4；显存占用更高并不意味着更快。这是短窗口测速，不是质量对照或通用硬件结论。预训练随机有放回采样，处理 3B Token 不等于无重复覆盖 3B 独立 Token。详见[数据指南](docs/data-guide.md)和[实验结果](docs/experiment-results.md)。
 
 ![303M 预训练曲线](docs/results/pretrain_300m.png)
 
@@ -126,7 +126,7 @@ examples/       原创双语 fixture，不含下载语料
 docs/           架构、详细结果、数据与运行文档
 ```
 
-`data/ artifacts/ runs/ tmp/` 为本地或远程产物，不随 Git 发布。正式实验留在 `runs/` 根目录，名称含参数与时间戳；助手短测与诊断进入 `runs/assistant/`。历史冻结身份不因整理改写，见 [runs 约定](docs/runs-layout.md)。
+`data/ artifacts/ runs/ tmp/` 为本地或远程产物，不随 Git 发布。正式实验留在 `runs/` 根目录，名称含参数与时间戳；助手短测与诊断进入 `runs/assistant/`。历史冻结身份不因整理改写，见[运行手册](docs/remote-runbook.md)。
 
 ## 安装与最小验证
 
@@ -191,9 +191,11 @@ bash scripts/setup_remote.sh --install
 
 ## 正式训练入口
 
-**仅 clone 代码不能直接复现历史长跑。** 需要按数据文档重新准备并验收 manifest / Tokenizer，持有匹配的 Base Checkpoint，重新生成绑定当前代码的独立配置。语料、完整预测与模型权重不分发。
+**仅 clone 代码不能直接复现历史长跑。** 需要取得匹配的 manifest、Tokenizer、Base 和运行身份；部分高层启动器还固定了原始输入的 SHA，不能仅改模板路径就用于任意新语料。新数据实验与历史受限入口的区别见[运行手册](docs/remote-runbook.md)。语料、完整预测与模型权重不分发。
 
 ### 预训练
+
+下面的高层启动流程要求持有通过原身份校验的 3B 产物；`train_300m.py` 的固定输入约束不会因更换模板而解除。
 
 ```bash
 source scripts/env_remote.sh
@@ -214,7 +216,7 @@ tail -f "$RUN_LOG"
 
 ### SFT 与 LoRA
 
-先按 [SFT 数据构建](docs/sft-data-build.md)、[扩充数据](docs/sft-expansion-20261027.md)准备输入。模板中的历史 Base / manifest 路径、哈希须换为自己验收的输入，再 prepare；不要改写已冻结的 `runs/configs/`。
+先按[数据指南](docs/data-guide.md)准备并验收输入。模板中的历史 Base / manifest 路径、哈希须与实际输入一致，再 prepare；不要改写已冻结的 `runs/configs/`。专项阅读入口另有固定起点约束，见[运行手册](docs/remote-runbook.md)。
 
 ```bash
 .venv/bin/python scripts/train_sft.py prepare \
@@ -229,7 +231,7 @@ tail -f "$RUN_LOG"
 
 ### DPO / PPO / GRPO
 
-`scripts/train_reading_rl.py` 需要专项 SFT 起点、审计通过的 comparison plan、数据 arm 和 GPU 奖励/数值校准；DPO 另需筛选后的 preference manifest。细节见 [RL 对照](docs/reading-rl-comparison-20261102.md)。
+`scripts/train_reading_rl.py` 需要专项 SFT 起点、审计通过的 comparison plan、数据 arm 和 GPU 奖励/数值校准；DPO 另需筛选后的 preference manifest。细节见[数据指南](docs/data-guide.md)和[运行手册](docs/remote-runbook.md)。
 
 ```bash
 .venv/bin/python scripts/train_reading_rl.py --help
@@ -250,7 +252,7 @@ nohup .venv/bin/python -u scripts/train_reading_rl.py start \
 - **预算**：模板保留原研究单价与 500 元预算校验，需按自己的条件审查。进程估费不覆盖全部空闲/存储费用，训练退出不会释放实例。
 - **评测纪律**：开发集选型，最终测试报告。历史早期主测试曾参与选型，不能宣称整个项目从未用测试选模型；后续独立辅助最终测试和阅读测试分别报告。
 
-推理入口：`llm_lab.cli generate`（Base 续写）、`scripts/chat_sft.py`（指令模型）、`scripts/chat_reading_rl.py`（阅读 RL 模型），需对应 manifest / Tokenizer。见[生成说明](docs/generation.md)。
+推理入口：`llm_lab.cli generate`（Base 续写）、`scripts/chat_sft.py`（指令模型）、`scripts/chat_reading_rl.py`（阅读 RL 模型），需对应 manifest / Tokenizer。见[运行手册](docs/remote-runbook.md)。
 
 ## 本次验证与能力边界
 
@@ -258,7 +260,7 @@ nohup .venv/bin/python -u scripts/train_reading_rl.py start \
 python -m pytest -q -p no:cacheprovider --basetemp tmp/pytest
 ```
 
-本次在现有 Windows 环境运行全套：**648 passed、8 failed、7 skipped、4 errors**。8 个失败与缺 PEFT 0.17.1 有关，4 个错误来自缺 OpenCC；跳过项涉及 PyArrow、Transformers 版本和 POSIX 平台。当前环境不同于历史远程固定组合，**不能标为全套通过**。离线 acquire → prepare → 配置校验 → 4 步 CPU 训练 → 生成 → validation 评测已单独通过。详见[发布与验证记录](docs/repository-release.md)。
+2026-11-13 发布检查在现有 Windows 环境运行全套：**648 passed、8 failed、7 skipped、4 errors**。8 个失败与缺 PEFT 0.17.1 有关，4 个错误来自缺 OpenCC；跳过项涉及 PyArrow、Transformers 版本和 POSIX 平台。当前环境不同于历史远程固定组合，**不能标为全套通过**。离线 acquire → prepare → 配置校验 → 4 步 CPU 训练 → 生成 → validation 评测已单独通过。原始检查记录保存在未提交的 `runs/assistant/system/release_20261113/`；本轮仅精简文档，没有重跑训练。
 
 CPU fixture 不证明 GPU 数值与吞吐；单 seed 不证明跨种子显著性。仓库未实现 FSDP / ZeRO / MoE、生产推理服务或通用数学推理 RL。详细结果报告保留负面结果和比较局限。
 
@@ -266,6 +268,8 @@ CPU fixture 不证明 GPU 数值与吞吐；单 seed 不证明跨种子显著性
 
 公开仓库包含源码、配置模板、原创 fixture、文档和脱敏汇总图表；不分发真实语料、模型/Adapter 权重、完整样本预测、W&B 原始事件、缓存或 SSH 登录配置。
 
-预训练来源含 Wikipedia、FineWeb-2 / FineWeb-Edu，SFT 和阅读来源见[数据指南](docs/data-guide.md)、[SFT 选源](docs/sft-data-selection.md)、[阅读数据](docs/reading-alignment-20261101.md)。存在署名、共享、非商业等不同许可，**混合数据不能统一视为可商用**。代码依赖、原始数据和模型分发需分别核对；本次未擅自指定覆盖全仓的开源许可证。
+预训练来源含 Wikipedia、FineWeb-2 / FineWeb-Edu，通用 SFT 和阅读数据来源、固定版本、筛选与许可统一见[数据指南](docs/data-guide.md)。存在署名、共享、非商业等不同许可，**混合数据不能统一视为可商用**。代码依赖、原始数据和模型分发需分别核对；本次未擅自指定覆盖全仓的开源许可证。
 
-`.gitignore` 排除了运行产物、凭据、机器配置和个人面试交付包，这些文件仍留本地。连接模板见 [sync_autodl.example.json](configs/deployment/sync_autodl.example.json)、[wandb_network.example.json](configs/remote/wandb_network.example.json)。部署打包脚本不遵循 Git 发布筛选，不可直接将本地部署包公开；见[仓库整理说明](docs/repository-release.md)。
+`.gitignore` 排除了运行产物、凭据、机器配置和个人面试交付包。连接模板见 [sync_autodl.example.json](configs/deployment/sync_autodl.example.json)、[wandb_network.example.json](configs/remote/wandb_network.example.json)。部署打包脚本不遵循 Git 发布筛选，不可直接将本地部署包公开；`.gitattributes` 保留冻结源码与结果文件原始字节，避免换行转换破坏 SHA 身份。
+
+`docs/` 仅保留 5 份核心文档及 `results/`。历史计划、操作流水、教学和面试资料已转入 Git 忽略的 `artifacts/document_archive/`，并保留逐文件校验与旧新路径映射；公开历史版本也可从 Git 提交记录查阅。
